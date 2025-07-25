@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - John Paolo Rosales | Innovation with Purpose</title>
+    <meta name="description" content="Explore John Paolo's award-winning projects including disaster preparedness games, university management systems, and educational technology research. Technical case studies with measurable impact." />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fportfolio1511back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.6"></script>
+</head>
+<body class="bg-background text-text-primary">
+    <!-- Navigation Header -->
+    <header class="bg-white shadow-subtle sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="homepage.html" class="flex items-center space-x-2">
+                        <div class="w-10 h-10 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center">
+                            <span class="text-white font-bold text-lg">JP</span>
+                        </div>
+                        <span class="text-xl font-semibold text-primary">John Paolo Rosales - Portfolio</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="homepage.html" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-colors duration-200">Home</a>
+                        <a href="about.html" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-colors duration-200">About</a>
+                        <a href="portfolio.html" class="text-primary font-medium px-3 py-2 rounded-md text-sm border-b-2 border-primary">Portfolio</a>
+                        <a href="services.html" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-colors duration-200">Services</a>
+                        <a href="experience.html" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-colors duration-200">Experience</a>
+                        <a href="contact.html" class="btn-primary">Contact</a>
+                    </div>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button type="button" class="text-text-secondary hover:text-primary focus:outline-none focus:text-primary" id="mobile-menu-button">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation Menu -->
+            <div class="md:hidden hidden" id="mobile-menu">
+                <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t border-gray-200">
+                    <a href="homepage.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base">Home</a>
+                    <a href="about.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base">About</a>
+                    <a href="portfolio.html" class="text-primary font-medium block px-3 py-2 rounded-md text-base">Portfolio</a>
+                    <a href="services.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base">Services</a>
+                    <a href="experience.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base">Experience</a>
+                    <a href="contact.html" class="text-primary font-medium block px-3 py-2 rounded-md text-base">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-primary-50 to-secondary-50 overflow-hidden">
+        <div class="absolute inset-0 bg-white opacity-50"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-24">
+            <div class="text-center">
+                <h1 class="text-4xl lg:text-6xl font-bold text-primary leading-tight mb-6">
+                    Project <span class="text-gradient">Portfolio</span>
+                </h1>
+                <p class="text-xl text-text-secondary leading-relaxed max-w-3xl mx-auto mb-8">
+                    Showcasing innovative solutions that bridge technology and community impact. Each project demonstrates technical excellence, user-centered design, and measurable real-world outcomes.
+                </p>
+                
+                <!-- Portfolio Stats -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+                    <div class="bg-white p-6 rounded-lg shadow-subtle">
+                        <div class="text-3xl font-bold text-primary mb-2">10+</div>
+                        <div class="text-text-secondary">Projects Completed</div>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-subtle">
+                        <div class="text-3xl font-bold text-secondary mb-2">1,000+</div>
+                        <div class="text-text-secondary">Users Impacted</div>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-subtle">
+                        <div class="text-3xl font-bold text-accent mb-2">13+</div>
+                        <div class="text-text-secondary">Industry Certifications Completed</div>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-subtle">
+                        <div class="text-3xl font-bold text-primary mb-2">10+</div>
+                        <div class="text-text-secondary">Developer Workshops Led</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="py-12 bg-white border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
+                <!-- Filter Controls -->
+                <div class="flex flex-wrap gap-4">
+                    <div class="flex items-center space-x-2">
+                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Filter" class="w-5 h-5" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        <span class="text-text-secondary font-medium">Filter by:</span>
+                    </div>
+                    
+                    <!-- Technology Filter -->
+                    <select id="tech-filter" class="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary-500 focus:border-transparent">
+                        <option value="all">All Technologies</option>
+                        <option value="php">PHP</option>
+                        <option value="javascript">JavaScript</option>
+                        <option value="mysql">MySQL</option>
+                        <option value="unity">Unity</option>
+                        <option value="csharp">C#</option>
+                        <option value="bootstrap">Bootstrap</option>
+                    </select>
+
+                    <!-- Project Type Filter -->
+                    <select id="type-filter" class="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary-500 focus:border-transparent">
+                        <option value="all">All Types</option>
+                        <option value="web">Web Development</option>
+                        <option value="game">Game Development</option>
+                        <option value="system">System Design</option>
+                        <option value="research">Research</option>
+                    </select>
+
+                    <!-- Impact Area Filter -->
+                    <select id="impact-filter" class="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary-500 focus:border-transparent">
+                        <option value="all">All Impact Areas</option>
+                        <option value="education">Education</option>
+                        <option value="community">Community</option>
+                        <option value="business">Business</option>
+                    </select>
+                </div>
+
+                <!-- Search and Reset -->
+                <div class="flex items-center space-x-4">
+                    <div class="relative">
+                        <input type="text" id="search-input" placeholder="Search projects..." class="pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary-500 focus:border-transparent w-64" />
+                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Search" class="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                    </div>
+                    <button id="reset-filters" class="px-4 py-2 text-text-secondary hover:text-primary transition-colors duration-200">
+                        Reset Filters
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Project Spotlight -->
+    <section class="py-20 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-primary mb-4">Featured Project</h2>
+                <p class="text-xl text-text-secondary">Award-winning thesis project that earned Best Thesis recognition</p>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-strong overflow-hidden">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-0">
+                    <!-- Project Image -->
+                    <div class="h-96 lg:h-auto overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Disaster Preparedness Game" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                    </div>
+
+                    <!-- Project Details -->
+                    <div class="p-8 lg:p-12">
+                        <div class="flex items-center mb-4">
+                            <span class="px-3 py-1 bg-accent-100 text-accent-800 rounded-full text-sm font-medium mr-3">Best Thesis Award</span>
+                            <span class="px-3 py-1 bg-primary-100 text-primary-800 rounded-full text-sm">Featured</span>
+                        </div>
+
+                        <h3 class="text-2xl lg:text-3xl font-bold text-primary mb-4">Disaster Preparedness Game</h3>
+                        <p class="text-text-secondary mb-6 leading-relaxed">
+                            An innovative educational platform that teaches emergency response through gamification. This award-winning project increased user engagement by 300% and trained over 5,000 community members in disaster preparedness protocols.
+                        </p>
+
+                        <!-- Key Metrics -->
+                        <div class="grid grid-cols-2 gap-4 mb-6">
+                            <div class="text-center p-4 bg-primary-50 rounded-lg">
+                                <div class="text-2xl font-bold text-primary">5,000+</div>
+                                <div class="text-sm text-text-secondary">Users Trained</div>
+                            </div>
+                            <div class="text-center p-4 bg-secondary-50 rounded-lg">
+                                <div class="text-2xl font-bold text-secondary">300%</div>
+                                <div class="text-sm text-text-secondary">Engagement Increase</div>
+                            </div>
+                        </div>
+
+                        <!-- Technology Stack -->
+                        <div class="mb-6">
+                            <h4 class="font-semibold text-primary mb-3">Technology Stack</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm">Unity</span>
+                                <span class="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm">C#</span>
+                                <span class="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm">Game Design</span>
+                                <span class="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm">UI/UX</span>
+                            </div>
+                        </div>
+
+                        <!-- Action Buttons -->
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <button class="btn-primary flex items-center justify-center" onclick="openProjectModal('disaster-game')">
+                                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="View" class="w-5 h-5 mr-2" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                                View Case Study
+                            </button>
+                            <a href="javascript:void(0)" class="inline-flex items-center justify-center px-6 py-3 border-2 border-primary text-primary font-semibold rounded-lg hover:bg-primary hover:text-white transition-all duration-300">
+                                <img src="https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="GitHub" class="w-5 h-5 mr-2" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                                View on GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-primary mb-4">All Projects</h2>
+                <p class="text-xl text-text-secondary">Comprehensive showcase of technical expertise and innovation</p>
+            </div>
+
+            <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project Card 1 -->
+                <div class="project-card bg-white rounded-lg shadow-subtle hover:shadow-strong transition-all duration-300 overflow-hidden" data-tech="unity,csharp" data-type="game" data-impact="education">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Disaster Preparedness Game" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        <div class="absolute top-4 left-4">
+                            <span class="px-2 py-1 bg-accent text-white rounded-full text-xs font-medium">Award Winner</span>
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300">
+                            <div class="absolute bottom-4 left-4 right-4">
+                                <button class="w-full bg-white text-primary py-2 rounded-lg font-medium hover:bg-primary hover:text-white transition-colors duration-200" onclick="openProjectModal('disaster-game')">
+                                    View Details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-primary mb-3">Disaster Preparedness Game</h3>
+                        <p class="text-text-secondary mb-4">Interactive educational platform teaching emergency response through gamification.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-primary-100 text-primary-800 rounded-full text-xs">Unity</span>
+                            <span class="px-2 py-1 bg-secondary-100 text-secondary-800 rounded-full text-xs">C#</span>
+                            <span class="px-2 py-1 bg-accent-100 text-accent-800 rounded-full text-xs">Game Design</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="text-sm text-text-secondary">
+                                <span class="font-medium text-accent">5,000+</span> Users Trained
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <img src="https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="GitHub" class="w-4 h-4" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                                <span class="text-sm text-text-secondary">★ 47</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="project-card bg-white rounded-lg shadow-subtle hover:shadow-strong transition-all duration-300 overflow-hidden" data-tech="php,mysql,bootstrap" data-type="web" data-impact="business">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1541746972996-4e0b0f93e586?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="University Management System" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300">
+                            <div class="absolute bottom-4 left-4 right-4">
+                                <button class="w-full bg-white text-primary py-2 rounded-lg font-medium hover:bg-primary hover:text-white transition-colors duration-200" onclick="openProjectModal('university-system')">
+                                    View Details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-primary mb-3">University Management System</h3>
+                        <p class="text-text-secondary mb-4">Comprehensive platform streamlining academic operations and reducing administrative workload.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-primary-100 text-primary-800 rounded-full text-xs">PHP</span>
+                            <span class="px-2 py-1 bg-secondary-100 text-secondary-800 rounded-full text-xs">MySQL</span>
+                            <span class="px-2 py-1 bg-accent-100 text-accent-800 rounded-full text-xs">Bootstrap</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="text-sm text-text-secondary">
+                                <span class="font-medium text-accent">2,500+</span> Students Managed
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <img src="https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="GitHub" class="w-4 h-4" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                                <span class="text-sm text-text-secondary">★ 32</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="project-card bg-white rounded-lg shadow-subtle hover:shadow-strong transition-all duration-300 overflow-hidden" data-tech="javascript,php,mysql" data-type="research" data-impact="education">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Research Thesis" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        <div class="absolute top-4 left-4">
+                            <span class="px-2 py-1 bg-accent text-white rounded-full text-xs font-medium">Best Thesis</span>
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300">
+                            <div class="absolute bottom-4 left-4 right-4">
+                                <button class="w-full bg-white text-primary py-2 rounded-lg font-medium hover:bg-primary hover:text-white transition-colors duration-200" onclick="openProjectModal('research-thesis')">
+                                    View Details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-primary mb-3">Educational Technology Research</h3>
+                        <p class="text-text-secondary mb-4">Award-winning research in educational technology that earned Best Thesis recognition.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-primary-100 text-primary-800 rounded-full text-xs">Research</span>
+                            <span class="px-2 py-1 bg-secondary-100 text-secondary-800 rounded-full text-xs">Data Analysis</span>
+                            <span class="px-2 py-1 bg-accent-100 text-accent-800 rounded-full text-xs">Innovation</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="text-sm text-text-secondary">
+                                <span class="font-medium text-accent">Best Thesis</span> Award Winner
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <img src="https://images.unsplash.com/photo-1586281380349-632531db7ed4?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Document" class="w-4 h-4" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                                <span class="text-sm text-text-secondary">PDF</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 4 -->
+                <div class="project-card bg-white rounded-lg shadow-subtle hover:shadow-strong transition-all duration-300 overflow-hidden" data-tech="javascript,php,bootstrap" data-type="web" data-impact="community">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Community Workshop Platform" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300">
+                            <div class="absolute bottom-4 left-4 right-4">
+                                <button class="w-full bg-white text-primary py-2 rounded-lg font-medium hover:bg-primary hover:text-white transition-colors duration-200" onclick="openProjectModal('workshop-platform')">
+                                    View Details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-primary mb-3">Community Workshop Platform</h3>
+                        <p class="text-text-secondary mb-4">Digital platform for organizing and managing technical workshops and community events.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-primary-100 text-primary-800 rounded-full text-xs">JavaScript</span>
+                            <span class="px-2 py-1 bg-secondary-100 text-secondary-800 rounded-full text-xs">PHP</span>
+                            <span class="px-2 py-1 bg-accent-100 text-accent-800 rounded-full text-xs">Bootstrap</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="text-sm text-text-secondary">
+                                <span class="font-medium text-accent">500+</span> Participants
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <img src="https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="GitHub" class="w-4 h-4" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                                <span class="text-sm text-text-secondary">★ 28</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 5 -->
+                <div class="project-card bg-white rounded-lg shadow-subtle hover:shadow-strong transition-all duration-300 overflow-hidden" data-tech="php,mysql,javascript" data-type="system" data-impact="business">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Inventory Management System" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300">
+                            <div class="absolute bottom-4 left-4 right-4">
+                                <button class="w-full bg-white text-primary py-2 rounded-lg font-medium hover:bg-primary hover:text-white transition-colors duration-200" onclick="openProjectModal('inventory-system')">
+                                    View Details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-primary mb-3">Inventory Management System</h3>
+                        <p class="text-text-secondary mb-4">Automated inventory tracking system with real-time analytics and reporting capabilities.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-primary-100 text-primary-800 rounded-full text-xs">PHP</span>
+                            <span class="px-2 py-1 bg-secondary-100 text-secondary-800 rounded-full text-xs">MySQL</span>
+                            <span class="px-2 py-1 bg-accent-100 text-accent-800 rounded-full text-xs">JavaScript</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="text-sm text-text-secondary">
+                                <span class="font-medium text-accent">85%</span> Efficiency Gain
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <img src="https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="GitHub" class="w-4 h-4" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                                <span class="text-sm text-text-secondary">★ 19</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 6 -->
+                <div class="project-card bg-white rounded-lg shadow-subtle hover:shadow-strong transition-all duration-300 overflow-hidden" data-tech="javascript,bootstrap" data-type="web" data-impact="education">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Student Portal" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300">
+                            <div class="absolute bottom-4 left-4 right-4">
+                                <button class="w-full bg-white text-primary py-2 rounded-lg font-medium hover:bg-primary hover:text-white transition-colors duration-200" onclick="openProjectModal('student-portal')">
+                                    View Details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-primary mb-3">Interactive Student Portal</h3>
+                        <p class="text-text-secondary mb-4">Modern web portal for student services, grade tracking, and academic resource access.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-primary-100 text-primary-800 rounded-full text-xs">JavaScript</span>
+                            <span class="px-2 py-1 bg-secondary-100 text-secondary-800 rounded-full text-xs">Bootstrap</span>
+                            <span class="px-2 py-1 bg-accent-100 text-accent-800 rounded-full text-xs">UI/UX</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="text-sm text-text-secondary">
+                                <span class="font-medium text-accent">1,200+</span> Active Users
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <img src="https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="GitHub" class="w-4 h-4" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                                <span class="text-sm text-text-secondary">★ 35</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Load More Button -->
+            <div class="text-center mt-12">
+                <button id="load-more-btn" class="btn-secondary">
+                    Load More Projects
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- GitHub Activity Section -->
+    <section class="py-20 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-primary mb-4">GitHub Activity</h2>
+                <p class="text-xl text-text-secondary">Open source contributions and development activity</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Contribution Graph -->
+                <div class="bg-white p-8 rounded-lg shadow-subtle">
+                    <h3 class="text-xl font-semibold text-primary mb-6">Contribution Activity</h3>
+                    <div class="space-y-4">
+                        <!-- Mock contribution graph -->
+                        <div class="grid grid-cols-12 gap-1">
+                            <!-- Generate contribution squares -->
+                            <div class="w-3 h-3 bg-primary-100 rounded-sm"></div>
+                            <div class="w-3 h-3 bg-primary-200 rounded-sm"></div>
+                            <div class="w-3 h-3 bg-primary-300 rounded-sm"></div>
+                            <div class="w-3 h-3 bg-primary-400 rounded-sm"></div>
+                            <div class="w-3 h-3 bg-primary-500 rounded-sm"></div>
+                            <div class="w-3 h-3 bg-primary-300 rounded-sm"></div>
+                            <div class="w-3 h-3 bg-primary-200 rounded-sm"></div>
+                            <div class="w-3 h-3 bg-primary-400 rounded-sm"></div>
+                            <div class="w-3 h-3 bg-primary-500 rounded-sm"></div>
+                            <div class="w-3 h-3 bg-primary-300 rounded-sm"></div>
+                            <div class="w-3 h-3 bg-primary-200 rounded-sm"></div>
+                            <div class="w-3 h-3 bg-primary-100 rounded-sm"></div>
+                        </div>
+                        <div class="flex items-center justify-between text-sm text-text-secondary">
+                            <span>Less</span>
+                            <div class="flex items-center space-x-1">
+                                <div class="w-3 h-3 bg-gray-200 rounded-sm"></div>
+                                <div class="w-3 h-3 bg-primary-200 rounded-sm"></div>
+                                <div class="w-3 h-3 bg-primary-400 rounded-sm"></div>
+                                <div class="w-3 h-3 bg-primary-600 rounded-sm"></div>
+                                <div class="w-3 h-3 bg-primary-800 rounded-sm"></div>
+                            </div>
+                            <span>More</span>
+                        </div>
+                    </div>
+                    <div class="mt-6 grid grid-cols-2 gap-4">
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-primary">247</div>
+                            <div class="text-sm text-text-secondary">Contributions</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-secondary">18</div>
+                            <div class="text-sm text-text-secondary">Repositories</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Repository Stats -->
+                <div class="bg-white p-8 rounded-lg shadow-subtle">
+                    <h3 class="text-xl font-semibold text-primary mb-6">Popular Repositories</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between p-4 bg-primary-50 rounded-lg">
+                            <div>
+                                <h4 class="font-medium text-primary">disaster-preparedness-game</h4>
+                                <p class="text-sm text-text-secondary">Educational game for emergency response training</p>
+                            </div>
+                            <div class="text-right">
+                                <div class="flex items-center space-x-2 text-sm text-text-secondary">
+                                    <img src="https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Star" class="w-4 h-4" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                                    <span>47</span>
+                                </div>
+                                <div class="text-xs text-text-secondary">C#</div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center justify-between p-4 bg-secondary-50 rounded-lg">
+                            <div>
+                                <h4 class="font-medium text-primary">university-management-system</h4>
+                                <p class="text-sm text-text-secondary">Comprehensive academic operations platform</p>
+                            </div>
+                            <div class="text-right">
+                                <div class="flex items-center space-x-2 text-sm text-text-secondary">
+                                    <img src="https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Star" class="w-4 h-4" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                                    <span>32</span>
+                                </div>
+                                <div class="text-xs text-text-secondary">PHP</div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center justify-between p-4 bg-accent-50 rounded-lg">
+                            <div>
+                                <h4 class="font-medium text-primary">workshop-platform</h4>
+                                <p class="text-sm text-text-secondary">Community event management system</p>
+                            </div>
+                            <div class="text-right">
+                                <div class="flex items-center space-x-2 text-sm text-text-secondary">
+                                    <img src="https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Star" class="w-4 h-4" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                                    <span>28</span>
+                                </div>
+                                <div class="text-xs text-text-secondary">JavaScript</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-6 text-center">
+                        <a href="javascript:void(0)" class="text-primary hover:text-secondary font-medium">View All Repositories →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-br from-primary to-secondary">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl lg:text-4xl font-bold text-white mb-6">Ready to Collaborate?</h2>
+            <p class="text-xl text-primary-100 mb-8">Let's discuss how we can work together to create innovative solutions that make a real impact.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact.html" class="inline-flex items-center justify-center px-8 py-4 bg-white text-primary font-semibold rounded-lg hover:bg-primary-50 transition-colors duration-300">
+                    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Contact" class="w-5 h-5 mr-2" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                    Get In Touch
+                </a>
+                <a href="services.html" class="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-primary transition-all duration-300">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Services" class="w-5 h-5 mr-2" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                    View Services
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Brand -->
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-10 h-10 bg-gradient-to-br from-secondary to-accent rounded-lg flex items-center justify-center">
+                            <span class="text-white font-bold text-lg">JP</span>
+                        </div>
+                        <span class="text-xl font-semibold">John Paolo Rosales</span>
+                    </div>
+                    <p class="text-primary-200 mb-6">Computer Science professional dedicated to creating innovative solutions that strengthen communities and improve lives through technology.</p>
+                    <div class="flex space-x-4">
+                        <a href="javascript:void(0)" class="text-primary-200 hover:text-white transition-colors duration-200">
+                            <img src="https://images.unsplash.com/photo-1611262588024-d12430b98920?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="LinkedIn" class="w-6 h-6" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        </a>
+                        <a href="javascript:void(0)" class="text-primary-200 hover:text-white transition-colors duration-200">
+                            <img src="https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="GitHub" class="w-6 h-6" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        </a>
+                        <a href="javascript:void(0)" class="text-primary-200 hover:text-white transition-colors duration-200">
+                            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Email" class="w-6 h-6" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-primary-200 hover:text-white transition-colors duration-200">About</a></li>
+                        <li><a href="portfolio.html" class="text-primary-200 hover:text-white transition-colors duration-200">Portfolio</a></li>
+                        <li><a href="services.html" class="text-primary-200 hover:text-white transition-colors duration-200">Services</a></li>
+                        <li><a href="experience.html" class="text-primary-200 hover:text-white transition-colors duration-200">Experience</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Get In Touch</h3>
+                    <ul class="space-y-2">
+                        <li class="text-primary-200">Manila, Philippines</li>
+                        <li><a href="mailto:john.paolo@email.com" class="text-primary-200 hover:text-white transition-colors duration-200">john.paolo@email.com</a></li>
+                        <li><a href="contact.html" class="text-primary-200 hover:text-white transition-colors duration-200">Contact Form</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-primary-700 mt-8 pt-8 text-center">
+                <p class="text-primary-200">© 2025 John Paolo Rosales. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Contact Button -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <a href="contact.html" class="bg-accent text-white p-4 rounded-full shadow-lg hover:bg-accent-700 transition-all duration-300 hover:scale-110">
+            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Contact" class="w-6 h-6" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+        </a>
+    </div>
+
+    <!-- Project Modal -->
+    <div id="project-modal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden">
+        <div class="flex items-center justify-center min-h-screen p-4">
+            <div class="bg-white rounded-lg shadow-modal max-w-4xl w-full max-h-screen overflow-y-auto">
+                <div class="p-8">
+                    <div class="flex items-center justify-between mb-6">
+                        <h2 id="modal-title" class="text-2xl font-bold text-primary">Project Details</h2>
+                        <button onclick="closeProjectModal()" class="text-text-secondary hover:text-primary">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div id="modal-content">
+                        <!-- Dynamic content will be loaded here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Filter functionality
+        const techFilter = document.getElementById('tech-filter');
+        const typeFilter = document.getElementById('type-filter');
+        const impactFilter = document.getElementById('impact-filter');
+        const searchInput = document.getElementById('search-input');
+        const resetButton = document.getElementById('reset-filters');
+        const projectCards = document.querySelectorAll('.project-card');
+
+        function filterProjects() {
+            const techValue = techFilter.value;
+            const typeValue = typeFilter.value;
+            const impactValue = impactFilter.value;
+            const searchValue = searchInput.value.toLowerCase();
+
+            projectCards.forEach(card => {
+                const techData = card.dataset.tech;
+                const typeData = card.dataset.type;
+                const impactData = card.dataset.impact;
+                const title = card.querySelector('h3').textContent.toLowerCase();
+                const description = card.querySelector('p').textContent.toLowerCase();
+
+                const techMatch = techValue === 'all' || techData.includes(techValue);
+                const typeMatch = typeValue === 'all' || typeData === typeValue;
+                const impactMatch = impactValue === 'all' || impactData === impactValue;
+                const searchMatch = searchValue === '' || title.includes(searchValue) || description.includes(searchValue);
+
+                if (techMatch && typeMatch && impactMatch && searchMatch) {
+                    card.style.display = 'block';
+                    card.classList.add('animate-fade-in');
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        techFilter.addEventListener('change', filterProjects);
+        typeFilter.addEventListener('change', filterProjects);
+        impactFilter.addEventListener('change', filterProjects);
+        searchInput.addEventListener('input', filterProjects);
+
+        resetButton.addEventListener('click', function() {
+            techFilter.value = 'all';
+            typeFilter.value = 'all';
+            impactFilter.value = 'all';
+            searchInput.value = '';
+            filterProjects();
+        });
+
+        // Project modal functionality
+        function openProjectModal(projectId) {
+            const modal = document.getElementById('project-modal');
+            const modalTitle = document.getElementById('modal-title');
+            const modalContent = document.getElementById('modal-content');
+
+            const projectData = {
+                'disaster-game': {
+                    title: 'Disaster Preparedness Game',
+                    content: `
+                        <div class="space-y-6">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Disaster Game" class="w-full h-64 object-cover rounded-lg" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                            
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                                <div class="bg-primary-50 p-4 rounded-lg text-center">
+                                    <div class="text-2xl font-bold text-primary">5,000+</div>
+                                    <div class="text-text-secondary">Users Trained</div>
+                                </div>
+                                <div class="bg-secondary-50 p-4 rounded-lg text-center">
+                                    <div class="text-2xl font-bold text-secondary">300%</div>
+                                    <div class="text-text-secondary">Engagement Increase</div>
+                                </div>
+                                <div class="bg-accent-50 p-4 rounded-lg text-center">
+                                    <div class="text-2xl font-bold text-accent">Best Thesis</div>
+                                    <div class="text-text-secondary">Award Winner</div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <h3 class="text-xl font-semibold text-primary mb-3">Challenge</h3>
+                                <p class="text-text-secondary">Traditional disaster preparedness training was ineffective, with low engagement rates and poor knowledge retention among community members.</p>
+                            </div>
+
+                            <div>
+                                <h3 class="text-xl font-semibold text-primary mb-3">Solution</h3>
+                                <p class="text-text-secondary">Developed an interactive game that simulates real disaster scenarios, allowing users to practice emergency response in a safe, engaging environment.</p>
+                            </div>
+
+                            <div>
+                                <h3 class="text-xl font-semibold text-primary mb-3">Technology Stack</h3>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-3 py-1 bg-primary-100 text-primary-800 rounded-full text-sm">Unity</span>
+                                    <span class="px-3 py-1 bg-secondary-100 text-secondary-800 rounded-full text-sm">C#</span>
+                                    <span class="px-3 py-1 bg-accent-100 text-accent-800 rounded-full text-sm">Game Design</span>
+                                    <span class="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm">UI/UX Design</span>
+                                </div>
+                            </div>
+
+                            <div>
+                                <h3 class="text-xl font-semibold text-primary mb-3">My Role</h3>
+                                <ul class="list-disc list-inside text-text-secondary space-y-1">
+                                    <li>Lead Developer and Game Designer</li>
+                                    <li>User Experience Research and Testing</li>
+                                    <li>Community Engagement and Feedback Integration</li>
+                                    <li>Performance Optimization and Deployment</li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h3 class="text-xl font-semibold text-primary mb-3">Results</h3>
+                                <ul class="list-disc list-inside text-text-secondary space-y-1">
+                                    <li>Trained over 5,000 community members in disaster preparedness</li>
+                                    <li>Achieved 300% increase in user engagement compared to traditional methods</li>
+                                    <li>Received Best Thesis Award for innovation and impact</li>
+                                    <li>Adopted by local emergency response organizations</li>
+                                </ul>
+                            </div>
+                        </div>
+                    `
+                },
+                'university-system': {
+                    title: 'University Management System',
+                    content: `
+                        <div class="space-y-6">
+                            <img src="https://images.unsplash.com/photo-1541746972996-4e0b0f93e586?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="University System" class="w-full h-64 object-cover rounded-lg" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                            
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                                <div class="bg-primary-50 p-4 rounded-lg text-center">
+                                    <div class="text-2xl font-bold text-primary">2,500+</div>
+                                    <div class="text-text-secondary">Students Managed</div>
+                                </div>
+                                <div class="bg-secondary-50 p-4 rounded-lg text-center">
+                                    <div class="text-2xl font-bold text-secondary">60%</div>
+                                    <div class="text-text-secondary">Workload Reduction</div>
+                                </div>
+                                <div class="bg-accent-50 p-4 rounded-lg text-center">
+                                    <div class="text-2xl font-bold text-accent">15</div>
+                                    <div class="text-text-secondary">Departments</div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <h3 class="text-xl font-semibold text-primary mb-3">Challenge</h3>
+                                <p class="text-text-secondary">The university's manual administrative processes were time-consuming, error-prone, and created bottlenecks in student services.</p>
+                            </div>
+
+                            <div>
+                                <h3 class="text-xl font-semibold text-primary mb-3">Solution</h3>
+                                <p class="text-text-secondary">Built a comprehensive web-based system that automates student enrollment, grade management, scheduling, and administrative workflows.</p>
+                            </div>
+
+                            <div>
+                                <h3 class="text-xl font-semibold text-primary mb-3">Technology Stack</h3>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-3 py-1 bg-primary-100 text-primary-800 rounded-full text-sm">PHP</span>
+                                    <span class="px-3 py-1 bg-secondary-100 text-secondary-800 rounded-full text-sm">MySQL</span>
+                                    <span class="px-3 py-1 bg-accent-100 text-accent-800 rounded-full text-sm">Bootstrap</span>
+                                    <span class="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm">JavaScript</span>
+                                </div>
+                            </div>
+
+                            <div>
+                                <h3 class="text-xl font-semibold text-primary mb-3">Key Features</h3>
+                                <ul class="list-disc list-inside text-text-secondary space-y-1">
+                                    <li>Student Information Management</li>
+                                    <li>Automated Grade Calculation and Reporting</li>
+                                    <li>Course Scheduling and Room Management</li>
+                                    <li>Faculty Performance Tracking</li>
+                                    <li>Financial Management Integration</li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h3 class="text-xl font-semibold text-primary mb-3">Impact</h3>
+                                <ul class="list-disc list-inside text-text-secondary space-y-1">
+                                    <li>Reduced administrative workload by 60%</li>
+                                    <li>Improved data accuracy and consistency</li>
+                                    <li>Enhanced student service delivery</li>
+                                    <li>Streamlined reporting and analytics</li>
+                                </ul>
+                            </div>
+                        </div>
+                    `
+                }
+            };
+
+            const project = projectData[projectId];
+            if (project) {
+                modalTitle.textContent = project.title;
+                modalContent.innerHTML = project.content;
+                modal.classList.remove('hidden');
+                document.body.style.overflow = 'hidden';
+            }
+        }
+
+        function closeProjectModal() {
+            const modal = document.getElementById('project-modal');
+            modal.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal when clicking outside
+        document.getElementById('project-modal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeProjectModal();
+            }
+        });
+
+        // Load more functionality
+        document.getElementById('load-more-btn').addEventListener('click', function() {
+            // Simulate loading more projects
+            this.textContent = 'Loading...';
+            setTimeout(() => {
+                this.textContent = 'All Projects Loaded';
+                this.disabled = true;
+                this.classList.add('opacity-50', 'cursor-not-allowed');
+            }, 1000);
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-slide-up');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all sections for animations
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>

@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>John Rosales - Portfolio</title>
+    <meta name="description"
+        content="Computer Science professional specializing in full-stack development, database design, and business development. Salutatorian, Magna Cum Laude graduate with proven leadership experience." />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script type="module"
+        src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fportfolio1511back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.6"></script>
+</head>
+
+<body class="bg-background text-text-primary">
+    <!-- Navigation Header -->
+    <header class="bg-white shadow-subtle sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="homepage.html" class="flex items-center space-x-2">
+                        <div
+                            class="w-10 h-10 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center">
+                            <span class="text-white font-bold text-lg">JR</span>
+                        </div>
+                        <span class="text-xl font-semibold text-primary">John Rosales - Portfolio</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="homepage.html"
+                            class="text-primary font-medium px-3 py-2 rounded-md text-sm border-b-2 border-primary">Home</a>
+                        <a href="about.html"
+                            class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-colors duration-200">About</a>
+                        <a href="portfolio.html"
+                            class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-colors duration-200">Portfolio</a>
+                        <a href="services.html"
+                            class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-colors duration-200">Services</a>
+                        <a href="experience.html"
+                            class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-colors duration-200">Experience</a>
+                        <a href="contact.html" class="btn-primary">Contact</a>
+                    </div>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button type="button"
+                        class="text-text-secondary hover:text-primary focus:outline-none focus:text-primary"
+                        id="mobile-menu-button">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation Menu -->
+            <div class="md:hidden hidden" id="mobile-menu">
+                <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t border-gray-200">
+                    <a href="homepage.html"
+                        class="text-primary font-medium block px-3 py-2 rounded-md text-base">Home</a>
+                    <a href="about.html"
+                        class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base">About</a>
+                    <a href="portfolio.html"
+                        class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base">Portfolio</a>
+                    <a href="services.html"
+                        class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base">Services</a>
+                    <a href="experience.html"
+                        class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base">Experience</a>
+                    <a href="contact.html"
+                        class="text-primary font-medium block px-3 py-2 rounded-md text-base">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-primary-50 to-secondary-50 overflow-hidden">
+        <div class="absolute inset-0 bg-white opacity-50"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- Hero Content -->
+                <div class="space-y-8">
+                    <!-- Trust Badges -->
+                    <div class="flex flex-wrap gap-3">
+                        <span
+                            class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-primary-100 text-accent-800">
+                            <img src="../images/Profile.jpg" alt="Award" class="w-4 h-4 mr-2" />
+                            Python
+                        </span>
+                        <span
+                            class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-accent-100 text-accent-800">
+                            <img src="../images/Profile.jpg" alt="Medal" class="w-4 h-4 mr-2" />
+                            Java
+                        </span>
+                        <span
+                            class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-accent-100 text-accent-800">
+                            <img src="../images/Profile.jpg" alt="Trophy" class="w-4 h-4 mr-2" />
+                            PHP
+                        </span>
+                        <span
+                            class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-accent-100 text-accent-800">
+                            <img src="../images/Profile.jpg" alt="Trophy" class="w-4 h-4 mr-2" />
+                            SQL / MariaDB
+                        </span>
+                        <span
+                            class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-accent-100 text-accent-800">
+                            <img src="../images/Profile.jpg" alt="Trophy" class="w-4 h-4 mr-2" />
+                            HTML
+                        </span>
+                        <span
+                            class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-accent-100 text-accent-800">
+                            <img src="../images/Profile.jpg" alt="Trophy" class="w-4 h-4 mr-2" />
+                            CSS
+                        </span>
+                        <span
+                            class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-accent-100 text-accent-800">
+                            <img src="../images/Profile.jpg" alt="Trophy" class="w-4 h-4 mr-2" />
+                            JavaScript
+                        </span>
+                    </div>
+
+                    <!-- Main Headline -->
+                    <div class="space-y-4">
+                        <h1 class="text-4xl lg:text-6xl font-bold text-primary leading-tight">
+                            John Rosales<br>
+                            <span class="text-gradient">Web Developer</span>
+                        </h1>
+                        <p class="text-xl text-text-secondary leading-relaxed">
+                            Computer Science Graduate with a sharp focus on Web Development, Database, Data Science, AI, and Automation. <br> Dedicated to engineering technology that empowers communities and drives
+                            meaningful impact.
+                        </p>
+                    </div>
+
+                    <!-- CTA Buttons -->
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="portfolio.html" class="btn-primary inline-flex items-center justify-center">
+                            <img src="../images/github.png" alt="Portfolio" class="w-5 h-5 mr-2" />
+                            View Portfolio
+                        </a>
+                        <a href="../documents/Rosales, John Paolo - Resume.pdf" download="John-Paolo-Rosales-Resume.pdf"
+                            class="inline-flex items-center justify-center px-6 py-3 border-2 border-primary text-primary font-semibold rounded-lg hover:bg-primary hover:text-white transition-all duration-300">
+                            <img src="../images/pdf.png" alt="Download PDF" class="w-5 h-5 mr-2" />
+                            Download Resume
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hero Image & Project Showcase -->
+                <div class="space-y-8">
+                    <!-- Professional Headshot -->
+                    <div class="relative">
+                        <div class="w-80 h-80 mx-auto rounded-full overflow-hidden shadow-strong">
+                            <img src="../images/Profile.jpg" alt="John Paolo Rosales"
+                                class="w-full h-full object-cover" />
+                        </div>
+                        <br>    
+
+                    <!-- Rotating Project Showcase -->
+                    <div class="bg-white rounded-lg shadow-subtle p-6">
+                        <h3 class="text-lg font-semibold text-primary mb-4">Featured Projects</h3>
+                        <div class="space-y-4" id="project-showcase">
+                            <div class="project-item flex items-center space-x-4 p-3 rounded-lg bg-primary-50">
+                                <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center">
+                                    <img src="../images/game-logo.png" alt="Game" class="w-6 h-6" />
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-primary">Disaster Preparedness Game</h4>
+                                    <p class="text-sm text-text-secondary">Interactive educational platform</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Timeline Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-primary mb-4">Academic & Leadership Journey</h2>
+                <p class="text-xl text-text-secondary">A timeline of achievements, growth, and community impact</p>
+            </div>
+
+            <div class="relative">
+                <!-- Timeline Line -->
+                <div class="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-primary-200"></div>
+
+                <!-- Timeline Items -->
+                <div class="space-y-20">
+                    <!-- Timeline Item 1 -->
+                    <div class="relative flex items-center">
+                        <div class="flex-1 pr-8 text-right">
+                            <div
+                                class="bg-primary-50 p-6 rounded-lg shadow-subtle hover:shadow-strong transition-shadow duration-300">
+                                <h3 class="text-lg font-semibold text-primary mb-2">St. Paul University Manila (2025)
+                                </h3>
+                                <p class="text-text-secondary mb-3">Graduated with Latin Honors – Class Rank: 2nd
+                                    (2025)<br>
+                                    Leadership Award – Bronze Medal (Top 5 Student Leaders)<br>
+                                    Dean’s List (2 Semesters) • President’s List (6 Semesters)</p>
+                                <div class="flex justify-end space-x-2">
+                                    <span class="px-3 py-1 bg-accent-100 text-accent-800 rounded-full text-sm">Magna Cum
+                                        Laude</span>
+                                    <span class="px-3 py-1 bg-secondary-100 text-secondary-800 rounded-full text-sm">BS
+                                        Computer Science</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-accent rounded-full border-4 border-white shadow-md">
+                        </div>
+                        <div class="flex-1 pl-8"></div>
+                    </div>
+
+                    <!-- Timeline Item 2 -->
+                    <div class="relative flex items-center">
+                        <div class="flex-1 pr-8"></div>
+                        <div
+                            class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-secondary rounded-full border-4 border-white shadow-md">
+                        </div>
+                        <div class="flex-1 pl-8">
+                            <div
+                                class="bg-secondary-50 p-6 rounded-lg shadow-subtle hover:shadow-strong transition-shadow duration-300">
+                                <h3 class="text-lg font-semibold text-primary mb-2">Technical Director (2022 - 2024)
+                                </h3>
+                                <p class="text-text-secondary mb-3">Oversaw full-scale technical direction for major university events at the Fleur-de-lis Auditorium. Led a skilled team in executing live audio, lighting, and multimedia systems — delivering seamless production experiences for hundreds of attendees. Entrusted with ensuring real-time precision in mission-critical, large-scale events.</p>
+                                <div class="flex space-x-2">
+                                    <span
+                                        class="px-3 py-1 bg-primary-100 text-primary-800 rounded-full text-sm">Technical
+                                        Operations</span>
+                                    <span class="px-3 py-1 bg-accent-100 text-accent-800 rounded-full text-sm">Event
+                                        Production</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 3 -->
+                    <div class="relative flex items-center">
+                        <div class="flex-1 pr-8 text-right">
+                            <div
+                                class="bg-accent-50 p-6 rounded-lg shadow-subtle hover:shadow-strong transition-shadow duration-300">
+                                <h3 class="text-lg font-semibold text-primary mb-2">Paulinian Ambassador - College of
+                                    Business (2022 - 2023)</h3>
+                                <p class="text-text-secondary mb-3"> Chosen as the official student ambassador for the College of Business and Management — a prestigious role recognizing leadership, academic excellence, and integrity. Represented the college in institutional campaigns, flagship events, and student engagement initiatives as a trusted public figure and advocate.</p>
+                                <div class="flex justify-end space-x-2">
+                                    <span class="px-3 py-1 bg-accent-100 text-accent-800 rounded-full text-sm">Public
+                                        Representation</span>
+                                    <span class="px-3 py-1 bg-primary-100 text-primary-800 rounded-full text-sm">Student
+                                        Leadership</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-primary rounded-full border-4 border-white shadow-md">
+                        </div>
+                        <div class="flex-1 pl-8"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- Skills Section -->
+    <section class="py-20 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-primary mb-4">Technical Competencies</h2>
+                <p class="text-xl text-text-secondary">Proven expertise across the full development stack</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Skill 1 -->
+                <div class="bg-white p-8 rounded-lg shadow-subtle hover:shadow-strong transition-shadow duration-300">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mr-4">
+                            <img src="../images/www.png" alt="Code" class="w-6 h-6" />
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-primary">Web Development</h3>
+                            <p class="text-text-secondary">95% Proficiency</p>
+                        </div>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-3 mb-4">
+                        <div class="bg-gradient-to-r from-primary to-secondary h-3 rounded-full" style="width: 95%">
+                        </div>
+                    </div>
+                    <p class="text-text-secondary text-sm">Applied across university-wide systems with real world deployments, production-level projects during internship.</p>
+                </div>
+
+                <!-- Skill 2 -->
+                <div class="bg-white p-8 rounded-lg shadow-subtle hover:shadow-strong transition-shadow duration-300">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center mr-4">
+                            <img src="../images/db.png" alt="Database" class="w-6 h-6" />
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-primary">Database Design</h3>
+                            <p class="text-text-secondary">90% Proficiency</p>
+                        </div>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-3 mb-4">
+                        <div class="bg-gradient-to-r from-secondary to-accent h-3 rounded-full" style="width: 90%">
+                        </div>
+                    </div>
+                    <p class="text-text-secondary text-sm">Designed and optimized relational databases for production systems and university platforms.</p>
+                </div>
+
+                <!-- Skill 3 -->
+                <div class="bg-white p-8 rounded-lg shadow-subtle hover:shadow-strong transition-shadow duration-300">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-accent rounded-lg flex items-center justify-center mr-4">
+                            <img src="../images/data-analysis.png" alt="Business" class="w-6 h-6" />
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-primary">Data Analytics & Automation</h3>
+                            <p class="text-text-secondary">85% Proficiency</p>
+                        </div>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-3 mb-4">
+                        <div class="bg-gradient-to-r from-accent to-primary h-3 rounded-full" style="width: 85%"></div>
+                    </div>
+                    <p class="text-text-secondary text-sm">Applied data analytics to uncover behavioral insights — including analyzing school website parameters to evaluate their impact on student enrollment trends.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects Carousel -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-primary mb-4">Featured Projects</h2>
+                <p class="text-xl text-text-secondary">Showcasing innovation, impact, and technical excellence</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div
+                    class="bg-white rounded-lg shadow-subtle hover:shadow-strong transition-all duration-300 overflow-hidden">
+                    <div class="h-48 overflow-hidden">
+                        <img src="../images/image12.jpg" alt="Disaster Preparedness Game"
+                            class="w-full h-full object-cover" />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-primary mb-3">Disaster Preparedness Game</h3>
+                        <p class="text-text-secondary mb-4">Interactive educational platform teaching emergency response
+                            through gamification. Increased user engagement by 300%.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-primary-100 text-primary-800 rounded-full text-sm">Unity</span>
+                            <span class="px-3 py-1 bg-secondary-100 text-secondary-800 rounded-full text-sm">C#</span>
+                            <span class="px-3 py-1 bg-accent-100 text-accent-800 rounded-full text-sm">Game
+                                Design</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="text-sm text-text-secondary">
+                                <span class="font-medium text-accent">5,000+</span> Users Trained
+                            </div>
+                            <a href="portfolio.html" class="text-primary hover:text-secondary font-medium">View Details
+                                →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div
+                    class="bg-white rounded-lg shadow-subtle hover:shadow-strong transition-all duration-300 overflow-hidden">
+                    <div class="h-48 overflow-hidden">
+                        <img src="../images/image13.jpg" alt="University Management System"
+                            class="w-full h-full object-cover" />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-primary mb-3">University Management System</h3>
+                        <p class="text-text-secondary mb-4">Comprehensive platform streamlining academic operations.
+                            Reduced administrative workload by 60%.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-primary-100 text-primary-800 rounded-full text-sm">PHP</span>
+                            <span
+                                class="px-3 py-1 bg-secondary-100 text-secondary-800 rounded-full text-sm">MySQL</span>
+                            <span class="px-3 py-1 bg-accent-100 text-accent-800 rounded-full text-sm">Bootstrap</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="text-sm text-text-secondary">
+                                <span class="font-medium text-accent">2,500+</span> Students Managed
+                            </div>
+                            <a href="portfolio.html" class="text-primary hover:text-secondary font-medium">View Details
+                                →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div
+                    class="bg-white rounded-lg shadow-subtle hover:shadow-strong transition-all duration-300 overflow-hidden">
+                    <div class="h-48 overflow-hidden">
+                        <img src="../images/image14.jpg" alt="Research Thesis" class="w-full h-full object-cover" />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-primary mb-3">Award-Winning Thesis</h3>
+                        <p class="text-text-secondary mb-4">Innovative research in educational technology that earned
+                            Best Thesis recognition and academic acclaim.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-primary-100 text-primary-800 rounded-full text-sm">Research</span>
+                            <span class="px-3 py-1 bg-secondary-100 text-secondary-800 rounded-full text-sm">Data
+                                Analysis</span>
+                            <span class="px-3 py-1 bg-accent-100 text-accent-800 rounded-full text-sm">Innovation</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="text-sm text-text-secondary">
+                                <span class="font-medium text-accent">Best Thesis</span> Award Winner
+                            </div>
+                            <a href="portfolio.html" class="text-primary hover:text-secondary font-medium">View Details
+                                →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership Section -->
+    <section class="py-20 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-primary mb-4">Leadership & Community Impact</h2>
+                <p class="text-xl text-text-secondary">Building communities through service and mentorship</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- Leadership Content -->
+                <div class="space-y-8">
+                    <div class="bg-white p-6 rounded-lg shadow-subtle">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center mr-4">
+                                <img src="../images/jpcs-logo.png" alt="Leadership" class="w-6 h-6" />
+                            </div>
+                            <h3 class="text-lg font-semibold text-primary">Junior Philippine Computer Society - SPU
+                                Manila</h3>
+                        </div>
+                        <p class="text-text-secondary mb-4">Led multiple student organizations, coordinating events for
+                            500+ participants and fostering collaborative learning environments.</p>
+                        <div class="flex space-x-2">
+                            <span class="px-3 py-1 bg-primary-100 text-primary-800 rounded-full text-sm">Event
+                                Management</span>
+                            <span class="px-3 py-1 bg-secondary-100 text-secondary-800 rounded-full text-sm">Team
+                                Building</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow-subtle">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center mr-4">
+                                <img src="../images/GDSC.png" alt="Workshop" class="w-6 h-6" />
+                            </div>
+                            <h3 class="text-lg font-semibold text-primary">Google Developer Student Clubs - SPU Manila
+                            </h3>
+                        </div>
+                        <p class="text-text-secondary mb-4">Designed and facilitated technical workshops, sharing
+                            knowledge with peers and contributing to the academic community's growth.</p>
+                        <div class="flex space-x-2">
+                            <span class="px-3 py-1 bg-accent-100 text-accent-800 rounded-full text-sm">Mentorship</span>
+                            <span class="px-3 py-1 bg-primary-100 text-primary-800 rounded-full text-sm">Knowledge
+                                Sharing</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Photo Gallery -->
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="space-y-4">
+                        <div class="h-40 overflow-hidden rounded-lg shadow-subtle">
+                            <img src="../images/homepage-org-1.jpg" alt="Workshop Event" class="w-full h-full object-cover" />
+                        </div>
+                        <div class="h-32 overflow-hidden rounded-lg shadow-subtle">
+                            <img src="../images/homepage-org-2.jpg" alt="Team Meeting" class="w-full h-full object-cover" />
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="h-32 overflow-hidden rounded-lg shadow-subtle">
+                            <img src="../images/homepage-org-3.jpg" alt="Community Event" class="w-full h-full object-cover" />
+                        </div>
+                        <div class="h-40 overflow-hidden rounded-lg shadow-subtle">
+                            <img src="../images/homepage-org-4.jpg" alt="Presentation" class="w-full h-full object-cover" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof & Testimonials -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-primary mb-4">What Others Say</h2>
+                <p class="text-xl text-text-secondary">Testimonials from professors, peers, and community members</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-primary-50 p-6 rounded-lg shadow-subtle">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                            <img src="../images/image21.jpg" alt="Professor Martinez"
+                                class="w-full h-full object-cover" />
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-primary">Mr. Ricketson Palacio</h4>
+                            <p class="text-sm text-text-secondary">Software Engineer II, Stratpoint Technologies</p>
+                        </div>
+                    </div>
+                    <p class="text-text-secondary italic">"John Paolo's thesis work was exceptional. His innovative
+                        approach to educational technology and meticulous research methodology set him apart as a true
+                        scholar."</p>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-secondary-50 p-6 rounded-lg shadow-subtle">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                            <img src="../images/image22.jpg" alt="Sarah Chen" class="w-full h-full object-cover" />
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-primary">Mr. Jacob Kristopher Laurel</h4>
+                            <p class="text-sm text-text-secondary">Software Developer, Serbiz</p>
+                        </div>
+                    </div>
+                    <p class="text-text-secondary italic">"Working with John Paolo on student organization events was
+                        inspiring. His leadership style brings out the best in everyone while maintaining high
+                        standards."</p>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-accent-50 p-6 rounded-lg shadow-subtle">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                            <img src="../images/image23.jpg" alt="Mark Rodriguez" class="w-full h-full object-cover" />
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-primary">Ms. Edilit Langcay</h4>
+                            <p class="text-sm text-text-secondary">Sales Manager, SM Development Corporation</p>
+                        </div>
+                    </div>
+                    <p class="text-text-secondary italic">"The technical workshops John Paolo facilitated were
+                        incredibly valuable. His ability to explain complex concepts clearly helped me advance my own
+                        skills significantly."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Preview -->
+    <section class="py-20 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-primary mb-4">Latest Insights</h2>
+                <p class="text-xl text-text-secondary">Thought leadership and technical expertise</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Blog Post 1 -->
+                <article
+                    class="bg-white rounded-lg shadow-subtle hover:shadow-strong transition-shadow duration-300 overflow-hidden">
+                    <div class="h-48 overflow-hidden">
+                        <img src="../images/image24.jpg" alt="Future of EdTech" class="w-full h-full object-cover" />
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-text-secondary mb-3">
+                            <span>July 20, 2025</span>
+                            <span class="mx-2">•</span>
+                            <span>5 min read</span>
+                        </div>
+                        <h3 class="text-xl font-semibold text-primary mb-3">The Future of Educational Technology</h3>
+                        <p class="text-text-secondary mb-4">Exploring how gamification and interactive learning
+                            platforms are revolutionizing education and student engagement...</p>
+                        <a href="javascript:void(0)" class="text-primary hover:text-secondary font-medium">Read More
+                            →</a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 2 -->
+                <article
+                    class="bg-white rounded-lg shadow-subtle hover:shadow-strong transition-shadow duration-300 overflow-hidden">
+                    <div class="h-48 overflow-hidden">
+                        <img src="../images/image25.jpg" alt="Leadership in Tech" class="w-full h-full object-cover" />
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-text-secondary mb-3">
+                            <span>July 15, 2025</span>
+                            <span class="mx-2">•</span>
+                            <span>7 min read</span>
+                        </div>
+                        <h3 class="text-xl font-semibold text-primary mb-3">Leadership Lessons from Student
+                            Organizations</h3>
+                        <p class="text-text-secondary mb-4">Key insights from managing diverse teams and organizing
+                            large-scale events in academic environments...</p>
+                        <a href="javascript:void(0)" class="text-primary hover:text-secondary font-medium">Read More
+                            →</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-br from-primary to-secondary">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl lg:text-4xl font-bold text-white mb-6">Ready to Collaborate?</h2>
+            <p class="text-xl text-primary-100 mb-8">Let's discuss how we can work together to create innovative
+                solutions that make a real impact.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact.html"
+                    class="inline-flex items-center justify-center px-8 py-4 bg-white text-primary font-semibold rounded-lg hover:bg-primary-50 transition-colors duration-300">
+                    <img src="../images/image26.jpg" alt="Contact" class="w-5 h-5 mr-2" />
+                    Get In Touch
+                </a>
+                <a href="portfolio.html"
+                    class="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-primary transition-all duration-300">
+                    <img src="../images/image27.jpg" alt="Portfolio" class="w-5 h-5 mr-2" />
+                    View My Work
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Brand -->
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div
+                            class="w-10 h-10 bg-gradient-to-br from-secondary to-accent rounded-lg flex items-center justify-center">
+                            <span class="text-white font-bold text-lg">JP</span>
+                        </div>
+                        <span class="text-xl font-semibold">John Paolo Rosales</span>
+                    </div>
+                    <p class="text-primary-200 mb-6">Computer Science professional dedicated to creating innovative
+                        solutions that strengthen communities and improve lives through technology.</p>
+                    <div class="flex space-x-4">
+                        <a href="javascript:void(0)"
+                            class="text-primary-200 hover:text-white transition-colors duration-200">
+                            <img src="../images/image28.jpg" alt="LinkedIn" class="w-6 h-6" />
+                        </a>
+                        <a href="javascript:void(0)"
+                            class="text-primary-200 hover:text-white transition-colors duration-200">
+                            <img src="../images/image29.jpg" alt="GitHub" class="w-6 h-6" />
+                        </a>
+                        <a href="javascript:void(0)"
+                            class="text-primary-200 hover:text-white transition-colors duration-200">
+                            <img src="../images/image30.jpg" alt="Email" class="w-6 h-6" />
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="about.html"
+                                class="text-primary-200 hover:text-white transition-colors duration-200">About</a></li>
+                        <li><a href="portfolio.html"
+                                class="text-primary-200 hover:text-white transition-colors duration-200">Portfolio</a>
+                        </li>
+                        <li><a href="services.html"
+                                class="text-primary-200 hover:text-white transition-colors duration-200">Services</a>
+                        </li>
+                        <li><a href="experience.html"
+                                class="text-primary-200 hover:text-white transition-colors duration-200">Experience</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Get In Touch</h3>
+                    <ul class="space-y-2">
+                        <li class="text-primary-200">Manila, Philippines</li>
+                        <li><a href="mailto:johnpaolorosales2@gmail.com"
+                                class="text-primary-200 hover:text-white transition-colors duration-200">johnpaolorosales2@gmail.com</a>
+                        </li>
+                        <li><a href="contact.html"
+                                class="text-primary-200 hover:text-white transition-colors duration-200">Contact
+                                Form</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-primary-700 mt-8 pt-8 text-center">
+                <p class="text-primary-200">© 2025 John Paolo Rosales. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Contact Button -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <a href="contact.html"
+            class="bg-accent text-white p-4 rounded-full shadow-lg hover:bg-accent-700 transition-all duration-300 hover:scale-110">
+            <img src="../images/image31.jpg" alt="Contact" class="w-6 h-6" />
+        </a>
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function () {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Project showcase rotation
+        const projects = [
+            {
+                icon: "../images/image8.jpg",
+                title: "Disaster Preparedness Game",
+                description: "Interactive educational platform"
+            },
+            {
+                icon: "../images/image13.jpg",
+                title: "University Management System",
+                description: "Comprehensive academic platform"
+            },
+            {
+                icon: "../images/image14.jpg",
+                title: "Award-Winning Thesis",
+                description: "Educational technology research"
+            }
+        ];
+
+        let currentProject = 0;
+        const projectShowcase = document.getElementById('project-showcase');
+
+        function rotateProject() {
+            const project = projects[currentProject];
+            projectShowcase.innerHTML = `
+                <div class="project-item flex items-center space-x-4 p-3 rounded-lg bg-primary-50 animate-fade-in">
+                    <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center">
+                        <img src="${project.icon}" alt="${project.title}" class="w-6 h-6">
+                    </div>
+                    <div>
+                        <h4 class="font-medium text-primary">${project.title}</h4>
+                        <p class="text-sm text-text-secondary">${project.description}</p>
+                    </div>
+                </div>
+            `;
+            currentProject = (currentProject + 1) % projects.length;
+        }
+
+        // Rotate projects every 3 seconds
+        setInterval(rotateProject, 3000);
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-slide-up');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all sections for animations
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+    <script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+
+</html>
