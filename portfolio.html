@@ -177,6 +177,344 @@
             </div>
         </div>
     </section>
+
+    <!-- Featured Project Spotlight -->
+    <section class="py-20 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-primary mb-4">Featured Project</h2>
+                <p class="text-xl text-text-secondary">Award-winning thesis project that earned Best Thesis recognition
+                </p>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-strong overflow-hidden">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-0">
+                    <!-- Project Image -->
+                    <div class="h-96 lg:h-auto overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Disaster Preparedness Game" class="w-full h-full object-cover" />
+                    </div>
+
+                    <!-- Project Details -->
+                    <div class="p-8 lg:p-12">
+                        <div class="flex items-center mb-4">
+                            <span
+                                class="px-3 py-1 bg-accent-100 text-accent-800 rounded-full text-sm font-medium mr-3">Best
+                                Thesis Award</span>
+                            <span class="px-3 py-1 bg-primary-100 text-primary-800 rounded-full text-sm">Featured</span>
+                        </div>
+
+                        <h3 class="text-2xl lg:text-3xl font-bold text-primary mb-4">Disaster Preparedness Game</h3>
+                        <p class="text-text-secondary mb-6 leading-relaxed">
+                            An innovative educational platform that teaches emergency response through gamification.
+                            This award-winning project increased user engagement by 300% and trained over 5,000
+                            community members in disaster preparedness protocols.
+                        </p>
+
+                        <!-- Key Metrics -->
+                        <div class="grid grid-cols-2 gap-4 mb-6">
+                            <div class="text-center p-4 bg-primary-50 rounded-lg">
+                                <div class="text-2xl font-bold text-primary">5,000+</div>
+                                <div class="text-sm text-text-secondary">Users Trained</div>
+                            </div>
+                            <div class="text-center p-4 bg-secondary-50 rounded-lg">
+                                <div class="text-2xl font-bold text-secondary">300%</div>
+                                <div class="text-sm text-text-secondary">Engagement Increase</div>
+                            </div>
+                        </div>
+
+                        <!-- Technology Stack -->
+                        <div class="mb-6">
+                            <h4 class="font-semibold text-primary mb-3">Technology Stack</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm">Unity</span>
+                                <span class="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm">C#</span>
+                                <span class="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm">Game
+                                    Design</span>
+                                <span class="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm">UI/UX</span>
+                            </div>
+                        </div>
+
+                        <!-- Action Buttons -->
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <button class="btn-primary flex items-center justify-center"
+                                onclick="openProjectModal('disaster-game')">
+                                <img src="../images/search.png" alt="View" class="w-5 h-5 mr-2" />
+                                View Case Study
+                            </button>
+                            <a href="javascript:void(0)"
+                                class="inline-flex items-center justify-center px-6 py-3 border-2 border-primary text-primary font-semibold rounded-lg hover:bg-primary hover:text-white transition-all duration-300">
+                                <img src="../images/search.png" alt="GitHub" class="w-5 h-5 mr-2" />
+                                View on Facebook
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-primary mb-4">All Projects</h2>
+                <p class="text-xl text-text-secondary">Comprehensive showcase of technical expertise and innovation</p>
+            </div>
+
+            <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project Card 1 -->
+                <div class="project-card bg-white rounded-lg shadow-subtle hover:shadow-strong transition-all duration-300 overflow-hidden"
+                    data-tech="unity,csharp" data-type="game" data-impact="education">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Disaster Preparedness Game" class="w-full h-full object-cover" />
+                        <div class="absolute top-4 left-4">
+                            <span class="px-2 py-1 bg-accent text-white rounded-full text-xs font-medium">Award
+                                Winner</span>
+                        </div>
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300">
+                            <div class="absolute bottom-4 left-4 right-4">
+                                <button
+                                    class="w-full bg-white text-primary py-2 rounded-lg font-medium hover:bg-primary hover:text-white transition-colors duration-200"
+                                    onclick="openProjectModal('disaster-game')">
+                                    View Details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-primary mb-3">Disaster Preparedness Game</h3>
+                        <p class="text-text-secondary mb-4">Interactive educational platform teaching emergency response
+                            through gamification.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-primary-100 text-primary-800 rounded-full text-xs">Unity</span>
+                            <span class="px-2 py-1 bg-secondary-100 text-secondary-800 rounded-full text-xs">C#</span>
+                            <span class="px-2 py-1 bg-accent-100 text-accent-800 rounded-full text-xs">Game
+                                Design</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="text-sm text-text-secondary">
+                                <span class="font-medium text-accent">5,000+</span> Users Trained
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <img src="" alt="GitHub" class="w-4 h-4" />
+                                <span class="text-sm text-text-secondary">★ 47</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="project-card bg-white rounded-lg shadow-subtle hover:shadow-strong transition-all duration-300 overflow-hidden"
+                    data-tech="php,mysql,bootstrap" data-type="web" data-impact="business">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1541746972996-4e0b0f93e586?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="University Management System" class="w-full h-full object-cover" />
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300">
+                            <div class="absolute bottom-4 left-4 right-4">
+                                <button
+                                    class="w-full bg-white text-primary py-2 rounded-lg font-medium hover:bg-primary hover:text-white transition-colors duration-200"
+                                    onclick="openProjectModal('university-system')">
+                                    View Details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-primary mb-3">University Management System</h3>
+                        <p class="text-text-secondary mb-4">Comprehensive platform streamlining academic operations and
+                            reducing administrative workload.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-primary-100 text-primary-800 rounded-full text-xs">PHP</span>
+                            <span
+                                class="px-2 py-1 bg-secondary-100 text-secondary-800 rounded-full text-xs">MySQL</span>
+                            <span class="px-2 py-1 bg-accent-100 text-accent-800 rounded-full text-xs">Bootstrap</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="text-sm text-text-secondary">
+                                <span class="font-medium text-accent">2,500+</span> Students Managed
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <img src="" alt="GitHub" class="w-4 h-4" />
+                                <span class="text-sm text-text-secondary">★ 32</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="project-card bg-white rounded-lg shadow-subtle hover:shadow-strong transition-all duration-300 overflow-hidden"
+                    data-tech="javascript,php,mysql" data-type="research" data-impact="education">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="" alt="Research Thesis" class="w-full h-full object-cover" />
+                        <div class="absolute top-4 left-4">
+                            <span class="px-2 py-1 bg-accent text-white rounded-full text-xs font-medium">Best
+                                Thesis</span>
+                        </div>
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300">
+                            <div class="absolute bottom-4 left-4 right-4">
+                                <button
+                                    class="w-full bg-white text-primary py-2 rounded-lg font-medium hover:bg-primary hover:text-white transition-colors duration-200"
+                                    onclick="openProjectModal('research-thesis')">
+                                    View Details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-primary mb-3">Educational Technology Research</h3>
+                        <p class="text-text-secondary mb-4">Award-winning research in educational technology that earned
+                            Best Thesis recognition.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-primary-100 text-primary-800 rounded-full text-xs">Research</span>
+                            <span class="px-2 py-1 bg-secondary-100 text-secondary-800 rounded-full text-xs">Data
+                                Analysis</span>
+                            <span class="px-2 py-1 bg-accent-100 text-accent-800 rounded-full text-xs">Innovation</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="text-sm text-text-secondary">
+                                <span class="font-medium text-accent">Best Thesis</span> Award Winner
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <img src="" alt="Document" class="w-4 h-4" />
+                                <span class="text-sm text-text-secondary">PDF</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 4 -->
+                <div class="project-card bg-white rounded-lg shadow-subtle hover:shadow-strong transition-all duration-300 overflow-hidden"
+                    data-tech="javascript,php,bootstrap" data-type="web" data-impact="community">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Community Workshop Platform" class="w-full h-full object-cover" />
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300">
+                            <div class="absolute bottom-4 left-4 right-4">
+                                <button
+                                    class="w-full bg-white text-primary py-2 rounded-lg font-medium hover:bg-primary hover:text-white transition-colors duration-200"
+                                    onclick="openProjectModal('workshop-platform')">
+                                    View Details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-primary mb-3">Community Workshop Platform</h3>
+                        <p class="text-text-secondary mb-4">Digital platform for organizing and managing technical
+                            workshops and community events.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span
+                                class="px-2 py-1 bg-primary-100 text-primary-800 rounded-full text-xs">JavaScript</span>
+                            <span class="px-2 py-1 bg-secondary-100 text-secondary-800 rounded-full text-xs">PHP</span>
+                            <span class="px-2 py-1 bg-accent-100 text-accent-800 rounded-full text-xs">Bootstrap</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="text-sm text-text-secondary">
+                                <span class="font-medium text-accent">500+</span> Participants
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <img src="" alt="GitHub" class="w-4 h-4" />
+                                <span class="text-sm text-text-secondary">★ 28</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 5 -->
+                <div class="project-card bg-white rounded-lg shadow-subtle hover:shadow-strong transition-all duration-300 overflow-hidden"
+                    data-tech="php,mysql,javascript" data-type="system" data-impact="business">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Inventory Management System" class="w-full h-full object-cover" />
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300">
+                            <div class="absolute bottom-4 left-4 right-4">
+                                <button
+                                    class="w-full bg-white text-primary py-2 rounded-lg font-medium hover:bg-primary hover:text-white transition-colors duration-200"
+                                    onclick="openProjectModal('inventory-system')">
+                                    View Details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-primary mb-3">Inventory Management System</h3>
+                        <p class="text-text-secondary mb-4">Automated inventory tracking system with real-time analytics
+                            and reporting capabilities.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-primary-100 text-primary-800 rounded-full text-xs">PHP</span>
+                            <span
+                                class="px-2 py-1 bg-secondary-100 text-secondary-800 rounded-full text-xs">MySQL</span>
+                            <span class="px-2 py-1 bg-accent-100 text-accent-800 rounded-full text-xs">JavaScript</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="text-sm text-text-secondary">
+                                <span class="font-medium text-accent">85%</span> Efficiency Gain
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <img src="" alt="GitHub" class="w-4 h-4" />
+                                <span class="text-sm text-text-secondary">★ 19</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 6 -->
+                <div class="project-card bg-white rounded-lg shadow-subtle hover:shadow-strong transition-all duration-300 overflow-hidden"
+                    data-tech="javascript,bootstrap" data-type="web" data-impact="education">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Student Portal" class="w-full h-full object-cover" />
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300">
+                            <div class="absolute bottom-4 left-4 right-4">
+                                <button
+                                    class="w-full bg-white text-primary py-2 rounded-lg font-medium hover:bg-primary hover:text-white transition-colors duration-200"
+                                    onclick="openProjectModal('student-portal')">
+                                    View Details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-primary mb-3">Interactive Student Portal</h3>
+                        <p class="text-text-secondary mb-4">Modern web portal for student services, grade tracking, and
+                            academic resource access.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span
+                                class="px-2 py-1 bg-primary-100 text-primary-800 rounded-full text-xs">JavaScript</span>
+                            <span
+                                class="px-2 py-1 bg-secondary-100 text-secondary-800 rounded-full text-xs">Bootstrap</span>
+                            <span class="px-2 py-1 bg-accent-100 text-accent-800 rounded-full text-xs">UI/UX</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="text-sm text-text-secondary">
+                                <span class="font-medium text-accent">1,200+</span> Active Users
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <img src="" alt="GitHub" class="w-4 h-4" />
+                                <span class="text-sm text-text-secondary">★ 35</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="text-center mt-12">
+                <button id="load-more-btn" class="btn-secondary">
+                    Load More Projects
+                </button>
+            </div>
+
+        </div>
+    </section>
     
     <!-- Verified Certifications Carousel -->
     <section class="py-20 bg-gradient-to-br">
