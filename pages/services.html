@@ -88,7 +88,7 @@
                 <!-- Hero Content -->
                 <div class="space-y-8">
                     <!-- Trust Badges -->
-                    
+
 
                     <!-- Main Headline -->
                     <div class="space-y-4">
@@ -581,27 +581,6 @@
                 arrow.classList.remove('rotate-180');
             }
         }
-
-        // Form submission handler
-        document.querySelector('form').addEventListener('submit', function (e) {
-            e.preventDefault();
-
-            // Get form data
-            const formData = new FormData(this);
-            const data = Object.fromEntries(formData);
-
-            // Simple validation
-            if (!data.firstName || !data.lastName || !data.email || !data.service) {
-                alert('Please fill in all required fields.');
-                return;
-            }
-
-            // Simulate form submission
-            alert('Thank you for your consultation request! I will contact you within 24 hours to schedule our call.');
-
-            // Reset form
-            this.reset();
-        });
 
         // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
