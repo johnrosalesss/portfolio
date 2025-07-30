@@ -204,216 +204,469 @@
 
             <div class="relative">
                 <!-- Timeline Line -->
-                <div class="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-primary-200"></div>
+                <div class="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-primary-200 hidden lg:block">
+                </div>
 
                 <!-- Timeline Items -->
-                <div class="space-y-20">
-                    <!-- Timeline Item 1 -->
-                    <div class="relative flex items-center">
-                        <div class="flex-1 pr-8 text-right">
-                            <div
-                                class="bg-primary-50 p-6 rounded-lg shadow-subtle hover:shadow-strong transition-shadow duration-300">
-                                <h3 class="text-lg font-semibold text-primary mb-2">St. Paul University Manila (2021 -
-                                    2025)
-                                </h3>
-                                <p class="text-text-secondary mb-3">Graduated with Latin Honors – Class Rank: 2nd
-                                    (2025)<br>
-                                    Leadership Award – Bronze Medal (Given to only 5 Graduates; 2025)<br>
-                                    Dean’s List (2 Semesters) • President’s List (6 Semesters)</p>
-                                <div class="flex justify-end space-x-2">
-                                    <span class="px-3 py-1 bg-accent-100 text-accent-800 rounded-full text-sm">Magna Cum
-                                        Laude</span>
-                                    <span class="px-3 py-1 bg-secondary-100 text-secondary-800 rounded-full text-sm">BS
-                                        Computer Science</span>
+                <div class="space-y-12">
+                    <!-- 2025 - Graduation -->
+                    <div class="relative timeline-item" data-year="2025">
+                        <div class="lg:flex lg:items-center">
+                            <div class="lg:w-1/2 lg:pr-8 lg:text-right">
+                                <div
+                                    class="bg-accent-50 p-8 rounded-lg shadow-subtle hover:shadow-strong transition-all duration-300 cursor-pointer timeline-card">
+                                    <div class="flex items-center justify-between mb-4 lg:flex-row-reverse">
+                                        <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center">
+                                            <img src="https://images.pexels.com/photos/267885/pexels-photo-267885.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                                                alt="Graduation" class="w-8 h-8" />
+                                        </div>
+                                        <div class="lg:mr-4">
+                                            <h3 class="text-2xl font-bold text-primary">St. Paul University Manila</h3>
+                                            <p class="text-accent font-semibold">2021 - 2025</p>
+                                        </div>
+                                    </div>
+                                    <p class="text-text-secondary mb-4">Graduated with Latin Honors – Class Rank: 2nd
+                                        (2025). Received Leadership Award – Bronze Medal (Given to only 5 Graduates).
+                                        Dean's List (2 Semesters) • President's List (6 Semesters).</p>
+                                    <div class="space-y-3 timeline-details hidden">
+                                        <div class="bg-white p-4 rounded-lg">
+                                            <h4 class="font-semibold text-primary mb-2">Academic Achievements</h4>
+                                            <ul class="text-sm text-text-secondary space-y-1">
+                                                <li>• Magna Cum Laude Honors</li>
+                                                <li>• Class Rank: 2nd (Salutatorian)</li>
+                                                <li>• Leadership Award - Bronze Medal</li>
+                                                <li>• President's List: 6 Semesters</li>
+                                                <li>• Dean's List: 2 semesters</li>
+                                            </ul>
+                                        </div>
+                                        <div class="bg-white p-4 rounded-lg">
+                                            <h4 class="font-semibold text-primary mb-2">Degree</h4>
+                                            <div class="flex flex-wrap gap-2">
+                                                <span
+                                                    class="px-3 py-1 bg-secondary-100 text-secondary-800 rounded-full text-sm">BS
+                                                    Computer Science</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex justify-end mt-4">
+                                        <button
+                                            class="text-primary hover:text-secondary font-medium text-sm expand-btn">View
+                                            Details →</button>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div
-                            class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-accent rounded-full border-4 border-white shadow-md">
-                        </div>
-                        <div class="flex-1 pl-8"></div>
-                    </div>
-                    <!-- Timeline Item 1.5 -->
-                    <div class="relative flex items-center">
-                        <div class="flex-1 pr-8"></div>
-                        <div
-                            class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-secondary rounded-full border-4 border-white shadow-md">
-                        </div>
-                        <div class="flex-1 pl-8">
                             <div
-                                class="bg-secondary-50 p-6 rounded-lg shadow-subtle hover:shadow-strong transition-shadow duration-300">
-                                <h3 class="text-lg font-semibold text-primary mb-2">Junior Philippine Computer Society -
-                                    SPU Manila (2021 - 2025)</h3>
-                                <p class="text-text-secondary mb-3"><strong>Auditor <- Secretary <- Core Team <- 1st
-                                            Year Class Representative</strong> <br>
-                                            Led and organized technical workshops on topics<br>
-                                            Migrated and centralized organizational resources across platforms (Google
-                                            Drive ↔ Microsoft OneDrive), standardizing archives dating back to A.Y. 2018
-                                            - 2025.<br>
-                                </p>
-                                <div class="flex space-x-2">
-                                    <span
-                                        class="px-3 py-1 bg-primary-100 text-primary-800 rounded-full text-sm">Blockchain</span>
-                                    <span class="px-3 py-1 bg-accent-100 text-accent-800 rounded-full text-sm">MS
-                                        365</span>
-                                    <span class="px-3 py-1 bg-primary-100 text-primary-800 rounded-full text-sm">PC
-                                        Assembly</span>
-                                    <span class="px-3 py-1 bg-accent-100 text-accent-800 rounded-full text-sm">Data
-                                        Analytics</span>
-                                    <span
-                                        class="px-3 py-1 bg-primary-100 text-primary-800 rounded-full text-sm">AI</span>
-
-                                </div>
+                                class="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-accent rounded-full border-4 border-white shadow-md hidden lg:block">
                             </div>
-                        </div>
-                    </div>
-                    <!-- Timeline Item 2.5 -->
-                    <div class="relative flex items-center">
-                        <div class="flex-1 pr-8 text-right">
-                            <div
-                                class="bg-accent-50 p-6 rounded-lg shadow-subtle hover:shadow-strong transition-shadow duration-300">
-                                <h3 class="text-lg font-semibold text-primary mb-2">
-                                    Google Developer Student Clubs – SPU Manila (2023–2024)
-                                </h3>
-                                <p class="text-text-secondary mb-3">
-                                    <strong>Core Team Member & Co-Founder</strong><br>
-                                    Organized hands-on events on GitHub, Flutter, and UI/UX design<br>
-                                    Empowered over 100 students, staff, and charity partners<br>
-                                    Led documentation and community engagement initiatives
-                                </p>
-                                </p>
-                                <div class="flex justify-end space-x-2">
-                                    <span
-                                        class="px-3 py-1 bg-secondary-100 text-secondary-800 rounded-full text-sm">UI/UX
-                                        Design</span>
-                                    <span
-                                        class="px-3 py-1 bg-accent-100 text-accent-800 rounded-full text-sm">Flutter</span>
-                                    <span
-                                        class="px-3 py-1 bg-primary-100 text-primary-800 rounded-full text-sm">GitHub</span>
-                                    <span
-                                        class="px-3 py-1 bg-accent-100 text-accent-800 rounded-full text-sm">Canva</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div
-                            class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-primary rounded-full border-4 border-white shadow-md">
-                        </div>
-                        <div class="flex-1 pl-8"></div>
-                    </div>
-
-                    <!-- Timeline Item 2 -->
-                    <div class="relative flex items-center">
-                        <div class="flex-1 pr-8"></div>
-                        <div
-                            class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-secondary rounded-full border-4 border-white shadow-md">
-                        </div>
-                        <div class="flex-1 pl-8">
-                            <div
-                                class="bg-secondary-50 p-6 rounded-lg shadow-subtle hover:shadow-strong transition-shadow duration-300">
-                                <h3 class="text-lg font-semibold text-primary mb-2">Technical Director (2022 - 2024)
-                                </h3>
-                                <p class="text-text-secondary mb-3"> Technical Director in Major University-Wide Events
-                                    (Paskuhan)<br>
-                                    Led Audiovisual Production Teams in Fleur de-Lis Auditorium<br>
-                                    Managed teams from lighting, sound, and multimedia<br>
-                                <div class="flex space-x-2">
-                                    <span
-                                        class="px-3 py-1 bg-primary-100 text-primary-800 rounded-full text-sm">Technical
-                                        Operations</span>
-                                    <span class="px-3 py-1 bg-accent-100 text-accent-800 rounded-full text-sm">Event
-                                        Production</span>
+                            <div class="lg:w-1/2 lg:pl-8 mt-6 lg:mt-0">
+                                <div class="h-64 overflow-hidden rounded-lg shadow-subtle">
+                                    <img src="../images/grad-1.jpeg" alt="Graduation Ceremony"
+                                        class="w-full h-full object-cover" />
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Timeline Item 3 -->
-                    <div class="relative flex items-center">
-                        <div class="flex-1 pr-8 text-right">
+                    <!-- 2023-2024 - GDSC -->
+                    <div class="relative timeline-item" data-year="2024">
+                        <div class="lg:flex lg:items-center lg:flex-row-reverse">
+                            <div class="lg:w-1/2 lg:pl-8">
+                                <div
+                                    class="bg-primary-50 p-8 rounded-lg shadow-subtle hover:shadow-strong transition-all duration-300 cursor-pointer timeline-card">
+                                    <div class="flex items-center justify-between mb-4">
+                                        <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center">
+                                            <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                                alt="GDSC" class="w-8 h-8" />
+                                        </div>
+                                        <div class="ml-4">
+                                            <h3 class="text-2xl font-bold text-primary">Google Developer Student Clubs –
+                                                SPU Manila</h3>
+                                            <p class="text-primary font-semibold">2023 - 2024</p>
+                                        </div>
+                                    </div>
+                                    <p class="text-text-secondary mb-4">Core Team Member & Co-Founder. Organized
+                                        hands-on events on GitHub, Flutter, and UI/UX design. Empowered over 100
+                                        students, staff, and charity partners.</p>
+                                    <div class="space-y-3 timeline-details hidden">
+                                        <div class="bg-white p-4 rounded-lg">
+                                            <h4 class="font-semibold text-primary mb-2">Key Contributions</h4>
+                                            <ul class="text-sm text-text-secondary space-y-1">
+                                                <li>• Led documentation and community engagement initiatives</li>
+                                                <li>• Organized technical workshops and hands-on events</li>
+                                                <li>• Established developer community at SPU Manila</li>
+                                            </ul>
+                                        </div>
+                                        <div class="bg-white p-4 rounded-lg">
+                                            <h4 class="font-semibold text-primary mb-2">Skills Developed</h4>
+                                            <div class="flex flex-wrap gap-2">
+                                                <span
+                                                    class="px-3 py-1 bg-secondary-100 text-secondary-800 rounded-full text-sm">UI/UX
+                                                    Design</span>
+                                                <span
+                                                    class="px-3 py-1 bg-accent-100 text-accent-800 rounded-full text-sm">Flutter</span>
+                                                <span
+                                                    class="px-3 py-1 bg-primary-100 text-primary-800 rounded-full text-sm">GitHub</span>
+                                                <span
+                                                    class="px-3 py-1 bg-accent-100 text-accent-800 rounded-full text-sm">Community
+                                                    Building</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex justify-start mt-4">
+                                        <button
+                                            class="text-primary hover:text-secondary font-medium text-sm expand-btn">View
+                                            Details →</button>
+                                    </div>
+                                </div>
+                            </div>
                             <div
-                                class="bg-accent-50 p-6 rounded-lg shadow-subtle hover:shadow-strong transition-shadow duration-300">
-                                <h3 class="text-lg font-semibold text-primary mb-2"> Mr. Paulinian Ambassador - College
-                                    of
-                                    Business and Management (2022 - 2023)</h3>
-                                <p class="text-text-secondary mb-3">
-                                    Appointed as official student ambassador for the College of Business<br>
-                                    Recognized for excellence in academics, integrity, and leadership<br>
-                                    Actively represented the college in institutional campaigns <br>
-                                    Served as a trusted advocate and public-facing student figure
-                                </p>
-                                <div class="flex justify-end space-x-2">
-                                    <span class="px-3 py-1 bg-accent-100 text-accent-800 rounded-full text-sm">Public
-                                        Representation</span>
-                                    <span class="px-3 py-1 bg-primary-100 text-primary-800 rounded-full text-sm">Student
-                                        Leadership</span>
+                                class="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-primary rounded-full border-4 border-white shadow-md hidden lg:block">
+                            </div>
+                            <div class="lg:w-1/2 lg:pr-8 mt-6 lg:mt-0">
+                                <div class="grid grid-cols-2 gap-4">
+                                    <div class="h-32 overflow-hidden rounded-lg shadow-subtle">
+                                        <img src="../images/ambassador2.jpg" alt="GDSC Event"
+                                            class="w-full h-full object-cover" />
+                                    </div>
+                                    <div class="h-32 overflow-hidden rounded-lg shadow-subtle">
+                                        <img src="../images/ambassador.jpeg" alt="GDSC Workshop"
+                                            class="w-full h-full object-cover" />
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div
-                            class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-primary rounded-full border-4 border-white shadow-md">
-                        </div>
-                        <div class="flex-1 pl-8"></div>
                     </div>
 
-                    <!-- Timeline Item 4 -->
-                    <div class="relative flex items-center">
-                        <div class="flex-1 pr-8"></div>
-                        <div
-                            class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-secondary rounded-full border-4 border-white shadow-md">
-                        </div>
-                        <div class="flex-1 pl-8">
+                    <!-- 2022-2023 - JPCS -->
+                    <div class="relative timeline-item" data-year="2023">
+                        <div class="lg:flex lg:items-center">
+                            <div class="lg:w-1/2 lg:pr-8 lg:text-right">
+                                <div
+                                    class="bg-secondary-50 p-8 rounded-lg shadow-subtle hover:shadow-strong transition-all duration-300 cursor-pointer timeline-card">
+                                    <div class="flex items-center justify-between mb-4 lg:flex-row-reverse">
+                                        <div
+                                            class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center">
+                                            <img src="../images/ambassador.jpeg" alt="Leadership" class="w-8 h-8" />
+                                        </div>
+                                        <div class="lg:mr-4">
+                                            <h3 class="text-2xl font-bold text-primary">Junior Philippine Computer
+                                                Society - SPU Manila</h3>
+                                            <p class="text-secondary font-semibold">2021 - 2025</p>
+                                        </div>
+                                    </div>
+                                    <p class="text-text-secondary mb-4">Progressed from 1st Year Class Representative to
+                                        Core Team, Secretary, and finally Auditor. Led technical workshops and migrated
+                                        organizational resources across platforms.</p>
+                                    <div class="space-y-3 timeline-details hidden">
+                                        <div class="bg-white p-4 rounded-lg">
+                                            <h4 class="font-semibold text-primary mb-2">Leadership Journey</h4>
+                                            <ul class="text-sm text-text-secondary space-y-1">
+                                                <li>• Auditor ← Secretary ← Core Team ← 1st Year Class Representative
+                                                </li>
+                                                <li>• Led technical workshops on various computing topics</li>
+                                                <li>• Migrated and centralized organizational resources across platforms
+                                                </li>
+                                                <li>• Standardized archives dating back to A.Y. 2018-2025</li>
+                                            </ul>
+                                        </div>
+                                        <div class="bg-white p-4 rounded-lg">
+                                            <h4 class="font-semibold text-primary mb-2">Workshop Topics</h4>
+                                            <div class="flex flex-wrap gap-2">
+                                                <span
+                                                    class="px-3 py-1 bg-primary-100 text-primary-800 rounded-full text-sm">Blockchain</span>
+                                                <span
+                                                    class="px-3 py-1 bg-accent-100 text-accent-800 rounded-full text-sm">MS
+                                                    365</span>
+                                                <span
+                                                    class="px-3 py-1 bg-primary-100 text-primary-800 rounded-full text-sm">PC
+                                                    Assembly</span>
+                                                <span
+                                                    class="px-3 py-1 bg-accent-100 text-accent-800 rounded-full text-sm">Data
+                                                    Analytics</span>
+                                                <span
+                                                    class="px-3 py-1 bg-primary-100 text-primary-800 rounded-full text-sm">AI</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex justify-end mt-4">
+                                        <button
+                                            class="text-primary hover:text-secondary font-medium text-sm expand-btn"> View
+                                            Details →</button>
+                                    </div>
+                                </div>
+                            </div>
                             <div
-                                class="bg-secondary-50 p-6 rounded-lg shadow-subtle hover:shadow-strong transition-shadow duration-300">
-                                <h3 class="text-lg font-semibold text-primary mb-2">Laguna State Polytechnic University
-                                    - San Pablo City Campus (2019 - 2021)
-                                </h3>
-                                <p class="text-text-secondary mb-3">Graduated With Honors <br> Cummulative GWA: 93 <br>
-                                    With Honors (3 Semesters) • With High Honors (1 Semester)</p>
-                                <div class="flex space-x-2">
-                                    <span
-                                        class="px-3 py-1 bg-primary-100 text-primary-800 rounded-full text-sm">Accountancy,
-                                        Business, and Management
-                                        Strand</span>
-                                    <span class="px-3 py-1 bg-accent-100 text-accent-800 rounded-full text-sm">With
-                                        Honors</span>
+                                class="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-secondary rounded-full border-4 border-white shadow-md hidden lg:block">
+                            </div>
+                            <div class="lg:w-1/2 lg:pl-8 mt-6 lg:mt-0">
+                                <div class="h-64 overflow-hidden rounded-lg shadow-subtle">
+                                    <img src="../images/ambassador2.jpg" alt="Team Leadership"
+                                        class="w-full h-full object-cover" />
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- Timeline Item 5 -->
-                    <div class="relative flex items-center">
-                        <div class="flex-1 pr-8 text-right">
+
+                    <!-- 2022-2023 - Technical Director -->
+                    <div class="relative timeline-item" data-year="2022">
+                        <div class="lg:flex lg:items-center lg:flex-row-reverse">
+                            <div class="lg:w-1/2 lg:pl-8">
+                                <div
+                                    class="bg-accent-50 p-8 rounded-lg shadow-subtle hover:shadow-strong transition-all duration-300 cursor-pointer timeline-card">
+                                    <div class="flex items-center justify-between mb-4">
+                                        <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center">
+                                            <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                                alt="Technical" class="w-8 h-8" />
+                                        </div>
+                                        <div class="ml-4">
+                                            <h3 class="text-2xl font-bold text-primary">Technical Director</h3>
+                                            <p class="text-accent font-semibold">2022 - 2024</p>
+                                        </div>
+                                    </div>
+                                    <p class="text-text-secondary mb-4">Technical Director in Major University-Wide
+                                        Events (Paskuhan). Led Audiovisual Production Teams in Fleur de-Lis Auditorium.
+                                        Managed teams for lighting, sound, and multimedia.</p>
+                                    <div class="space-y-3 timeline-details hidden">
+                                        <div class="bg-white p-4 rounded-lg">
+                                            <h4 class="font-semibold text-primary mb-2">Key Responsibilities</h4>
+                                            <ul class="text-sm text-text-secondary space-y-1">
+                                                <li>• Oversaw technical operations for university-wide events</li>
+                                                <li>• Managed teams for lighting, sound, and multimedia production</li>
+                                                <li>• Coordinated with event organizers and performers</li>
+                                                <li>• Ensured smooth execution of technical aspects</li>
+                                            </ul>
+                                        </div>
+                                        <div class="bg-white p-4 rounded-lg">
+                                            <h4 class="font-semibold text-primary mb-2">Skills Developed</h4>
+                                            <div class="flex flex-wrap gap-2">
+                                                <span
+                                                    class="px-3 py-1 bg-primary-100 text-primary-800 rounded-full text-sm">Technical
+                                                    Operations</span>
+                                                <span
+                                                    class="px-3 py-1 bg-accent-100 text-accent-800 rounded-full text-sm">Event
+                                                    Production</span>
+                                                <span
+                                                    class="px-3 py-1 bg-secondary-100 text-secondary-800 rounded-full text-sm">Team
+                                                    Leadership</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex justify-start mt-4">
+                                        <button
+                                            class="text-primary hover:text-secondary font-medium text-sm expand-btn">View
+                                            Details →</button>
+                                    </div>
+                                </div>
+                            </div>
                             <div
-                                class="bg-accent-50 p-6 rounded-lg shadow-subtle hover:shadow-strong transition-shadow duration-300">
-                                <h3 class="text-lg font-semibold text-primary mb-2">San Pablo Christian School
-                                    (2015–2019)</h3>
-                                <p class="text-text-secondary mb-3">
-                                    Graduated with Honors<br>
-                                    Consistent Honor Student
-                                </p>
-                                <div class="flex justify-end space-x-2">
-                                    <span
-                                        class="px-3 py-1 bg-secondary-100 text-secondary-800 rounded-full text-sm">Consistent
-                                        Honors</span>
-                                    <span class="px-3 py-1 bg-accent-100 text-accent-800 rounded-full text-sm">Junior
-                                        High School</span>
+                                class="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-accent rounded-full border-4 border-white shadow-md hidden lg:block">
+                            </div>
+                            <div class="lg:w-1/2 lg:pr-8 mt-6 lg:mt-0">
+                                <div class="grid grid-cols-2 gap-4">
+                                    <div class="h-32 overflow-hidden rounded-lg shadow-subtle">
+                                        <img src="../images/ambassador2.jpg" alt="Event Production"
+                                            class="w-full h-full object-cover" />
+                                    </div>
+                                    <div class="h-32 overflow-hidden rounded-lg shadow-subtle">
+                                        <img src="../images/ambassador.jpeg" alt="Technical Team"
+                                            class="w-full h-full object-cover" />
+                                    </div>
                                 </div>
                             </div>
                         </div>
-
-                        <div
-                            class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-accent rounded-full border-4 border-white shadow-md">
-                        </div>
-                        <div class="flex-1 pl-8"></div>
                     </div>
 
+                    <!-- 2022-2023 - Ambassador -->
+                    <div class="relative timeline-item" data-year="2022">
+                        <div class="lg:flex lg:items-center">
+                            <div class="lg:w-1/2 lg:pr-8 lg:text-right">
+                                <div
+                                    class="bg-primary-50 p-8 rounded-lg shadow-subtle hover:shadow-strong transition-all duration-300 cursor-pointer timeline-card">
+                                    <div class="flex items-center justify-between mb-4 lg:flex-row-reverse">
+                                        <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center">
+                                            <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                                alt="Ambassador" class="w-8 h-8" />
+                                        </div>
+                                        <div class="lg:mr-4">
+                                            <h3 class="text-2xl font-bold text-primary">Mr. Paulinian Ambassador</h3>
+                                            <p class="text-primary font-semibold">2022 - 2023</p>
+                                        </div>
+                                    </div>
+                                    <p class="text-text-secondary mb-4">Appointed as official student ambassador for the
+                                        College of Business and Management. Recognized for excellence in academics,
+                                        integrity, and leadership. Actively represented the college in institutional
+                                        campaigns.</p>
+                                    <div class="space-y-3 timeline-details hidden">
+                                        <div class="bg-white p-4 rounded-lg">
+                                            <h4 class="font-semibold text-primary mb-2">Key Responsibilities</h4>
+                                            <ul class="text-sm text-text-secondary space-y-1">
+                                                <li>• Served as public-facing representative of the college</li>
+                                                <li>• Participated in institutional campaigns and events</li>
+                                                <li>• Acted as liaison between students and administration</li>
+                                                <li>• Promoted college programs and initiatives</li>
+                                            </ul>
+                                        </div>
+                                        <div class="bg-white p-4 rounded-lg">
+                                            <h4 class="font-semibold text-primary mb-2">Skills Developed</h4>
+                                            <div class="flex flex-wrap gap-2">
+                                                <span
+                                                    class="px-3 py-1 bg-accent-100 text-accent-800 rounded-full text-sm">Public
+                                                    Representation</span>
+                                                <span
+                                                    class="px-3 py-1 bg-primary-100 text-primary-800 rounded-full text-sm">Student
+                                                    Leadership</span>
+                                                <span
+                                                    class="px-3 py-1 bg-secondary-100 text-secondary-800 rounded-full text-sm">Public
+                                                    Speaking</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex justify-end mt-4">
+                                        <button
+                                            class="text-primary hover:text-secondary font-medium text-sm expand-btn">View
+                                            Details →</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-primary rounded-full border-4 border-white shadow-md hidden lg:block">
+                            </div>
+                            <div class="lg:w-1/2 lg:pl-8 mt-6 lg:mt-0">
+                                <div class="h-64 overflow-hidden rounded-lg shadow-subtle">
+                                    <img src="../images/ambassador.jpeg" alt="Ambassador Role"
+                                        class="w-full h-full object-cover" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2019-2021 - LSPU -->
+                    <div class="relative timeline-item" data-year="2021">
+                        <div class="lg:flex lg:items-center lg:flex-row-reverse">
+                            <div class="lg:w-1/2 lg:pl-8">
+                                <div
+                                    class="bg-secondary-50 p-8 rounded-lg shadow-subtle hover:shadow-strong transition-all duration-300 cursor-pointer timeline-card">
+                                    <div class="flex items-center justify-between mb-4">
+                                        <div
+                                            class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center">
+                                            <img src="https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                                alt="LSPU" class="w-8 h-8" />
+                                        </div>
+                                        <div class="ml-4">
+                                            <h3 class="text-2xl font-bold text-primary">Laguna State Polytechnic
+                                                University</h3>
+                                            <p class="text-secondary font-semibold">2019 - 2021</p>
+                                        </div>
+                                    </div>
+                                    <p class="text-text-secondary mb-4">Graduated With Honors from the Accountancy,
+                                        Business, and Management Strand. Cumulative GWA: 93. With Honors (3 Semesters) •
+                                        With High Honors (1 Semester).</p>
+                                    <div class="space-y-3 timeline-details hidden">
+                                        <div class="bg-white p-4 rounded-lg">
+                                            <h4 class="font-semibold text-primary mb-2">Academic Achievements</h4>
+                                            <ul class="text-sm text-text-secondary space-y-1">
+                                                <li>• Graduated With Honors</li>
+                                                <li>• Cumulative GWA: 93</li>
+                                                <li>• With Honors (3 Semesters)</li>
+                                                <li>• With High Honors (1 Semester)</li>
+                                            </ul>
+                                        </div>
+                                        <div class="bg-white p-4 rounded-lg">
+                                            <h4 class="font-semibold text-primary mb-2">Strand</h4>
+                                            <div class="flex flex-wrap gap-2">
+                                                <span
+                                                    class="px-3 py-1 bg-primary-100 text-primary-800 rounded-full text-sm">Accountancy,
+                                                    Business, and Management</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex justify-start mt-4">
+                                        <button
+                                            class="text-primary hover:text-secondary font-medium text-sm expand-btn">View
+                                            Details →</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-secondary rounded-full border-4 border-white shadow-md hidden lg:block">
+                            </div>
+                            <div class="lg:w-1/2 lg:pr-8 mt-6 lg:mt-0">
+                                <div class="grid grid-cols-2 gap-4">
+                                    <div class="h-32 overflow-hidden rounded-lg shadow-subtle">
+                                        <img src="https://images.pixabay.com/photo-2016/11/30/20/58/programming-1873854_1280.png"
+                                            alt="LSPU Campus" class="w-full h-full object-cover" />
+                                    </div>
+                                    <div class="h-32 overflow-hidden rounded-lg shadow-subtle">
+                                        <img src="https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                                            alt="LSPU Graduation" class="w-full h-full object-cover" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2015-2019 - High School -->
+                    <div class="relative timeline-item" data-year="2019">
+                        <div class="lg:flex lg:items-center">
+                            <div class="lg:w-1/2 lg:pr-8 lg:text-right">
+                                <div
+                                    class="bg-accent-50 p-8 rounded-lg shadow-subtle hover:shadow-strong transition-all duration-300 cursor-pointer timeline-card">
+                                    <div class="flex items-center justify-between mb-4 lg:flex-row-reverse">
+                                        <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center">
+                                            <img src="https://images.unsplash.com/photo-1588072432836-e10032774350?q=80&w=2944&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                                alt="High School" class="w-8 h-8" />
+                                        </div>
+                                        <div class="lg:mr-4">
+                                            <h3 class="text-2xl font-bold text-primary">San Pablo Christian School</h3>
+                                            <p class="text-accent font-semibold">2015 - 2019</p>
+                                        </div>
+                                    </div>
+                                    <p class="text-text-secondary mb-4">Graduated with Honors from Junior High School.
+                                        Consistent Honor Student throughout the program.</p>
+                                    <div class="space-y-3 timeline-details hidden">
+                                        <div class="bg-white p-4 rounded-lg">
+                                            <h4 class="font-semibold text-primary mb-2">Achievements</h4>
+                                            <ul class="text-sm text-text-secondary space-y-1">
+                                                <li>• Graduated with Honors</li>
+                                                <li>• Consistent Honor Student</li>
+                                                <li>• Active in extracurricular activities</li>
+                                            </ul>
+                                        </div>
+                                        <div class="bg-white p-4 rounded-lg">
+                                            <h4 class="font-semibold text-primary mb-2">Level</h4>
+                                            <div class="flex flex-wrap gap-2">
+                                                <span
+                                                    class="px-3 py-1 bg-secondary-100 text-secondary-800 rounded-full text-sm">Junior
+                                                    High School</span>
+                                                <span
+                                                    class="px-3 py-1 bg-accent-100 text-accent-800 rounded-full text-sm">Consistent
+                                                    Honors</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex justify-end mt-4">
+                                        <button
+                                            class="text-primary hover:text-secondary font-medium text-sm expand-btn">View
+                                            Details →</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-accent rounded-full border-4 border-white shadow-md hidden lg:block">
+                            </div>
+                            <div class="lg:w-1/2 lg:pl-8 mt-6 lg:mt-0">
+                                <div class="h-64 overflow-hidden rounded-lg shadow-subtle">
+                                    <img src="https://images.pixabay.com/photo-2016/10/11/21/43/geometric-1732847_1280.jpg"
+                                        alt="High School" class="w-full h-full object-cover" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-
     </section>
 
-    <!-- Skills Section -->
+    <!-- Technical Competencies Section -->
     <section class="py-20 bg-surface">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
@@ -999,7 +1252,7 @@
             observer.observe(section);
         });
     </script>
-    <script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+
 </body>
 
 </html>
