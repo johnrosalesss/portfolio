@@ -1,0 +1,1394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Page - JR Portfolio</title>
+    <meta name="description" content="John Rosales - Projects" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" href="../images/SDG_logo.png" type="image/png" />
+    <script type="module"
+        src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fportfolio1511back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.6"></script>
+</head>
+
+<body class="bg-background text-text-primary">
+    <!-- Navigation Header -->
+    <header class="bg-white shadow-subtle sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="homepage.html" class="flex items-center space-x-2">
+                        <div
+                            class="w-10 h-10 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center">
+                            <span class="text-white font-bold text-lg">JR</span>
+                        </div>
+                        <span class="text-xl font-semibold text-primary">John Rosales - Portfolio</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="homepage.html"
+                            class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-colors duration-200">Home</a>
+                        <a href="about.html"
+                            class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-colors duration-200">About</a>
+                        <a href="project.html"
+                            class="text-primary font-medium px-3 py-2 rounded-md text-sm border-b-2 border-primary">Projects</a>
+                        <a href="services.html"
+                            class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-colors duration-200">Services</a>
+                        <a href="experience.html"
+                            class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-colors duration-200">Experience</a>
+                        <a href="contact.html" class="btn-primary hover:bg-accent-700">Contact</a>
+                    </div>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button type="button"
+                        class="text-text-secondary hover:text-primary focus:outline-none focus:text-primary"
+                        id="mobile-menu-button">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation Menu -->
+            <div class="md:hidden hidden" id="mobile-menu">
+                <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t border-gray-200">
+                    <a href="homepage.html"
+                        class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base">Home</a>
+                    <a href="about.html"
+                        class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base">About</a>
+                    <a href="project.html"
+                        class="text-primary font-medium block px-3 py-2 rounded-md text-base">Projects</a>
+                    <a href="services.html"
+                        class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base">Services</a>
+                    <a href="experience.html"
+                        class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base">Experience</a>
+                    <a href="contact.html"
+                        class="text-primary font-medium block px-3 py-2 rounded-md text-base">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-primary-50 to-secondary-50 overflow-hidden">
+        <div class="absolute inset-0 bg-white opacity-50"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-24">
+            <div class="text-center">
+                <h1 class="text-4xl lg:text-6xl font-bold text-primary leading-tight mb-6">
+                    Projects <span class="text-gradient">& Certifications</span>
+                </h1>
+                <p class="text-xl text-text-secondary leading-relaxed max-w-3xl mx-auto mb-8">
+                    A curated showcase of real-world systems, game-changing tools, and community-centered platforms.
+                    Every project and certificate reflects a passion for purpose-driven technology, strategic problem
+                    solving, and
+                    lasting social impact.
+                </p>
+
+                <!-- Portfolio Stats -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+                    <div class="bg-white p-6 rounded-lg shadow-subtle">
+                        <div class="text-3xl font-bold text-primary mb-2">10+</div>
+                        <div class="text-text-secondary">Software Projects</div>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-subtle">
+                        <div class="text-3xl font-bold text-secondary mb-2">1,000+</div>
+                        <div class="text-text-secondary">End-Users Empowered</div>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-subtle">
+                        <div class="text-3xl font-bold text-accent mb-2">12+</div>
+                        <div class="text-text-secondary">Certifications in Tech & Cloud</div>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-subtle">
+                        <div class="text-3xl font-bold text-primary mb-2">10+</div>
+                        <div class="text-text-secondary">Workshops & Events Led</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Project Spotlight -->
+    <section class="py-20 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-primary mb-4">Featured Project</h2>
+                <p class="text-xl text-text-secondary">
+                    Launched on March 1, 2024 — St. Paul University Manila Information Systems
+                </p>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-strong overflow-hidden">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-0">
+                    <!-- Project Image -->
+                    <div class="h-96 lg:h-auto overflow-hidden">
+                        <img src="../images/sister-1.jpg" alt="SPU Manila Information Systems"
+                            class="w-full h-full object-cover" />
+                    </div>
+
+                    <!-- Project Details -->
+                    <div class="p-8 lg:p-12">
+                        <div class="flex items-center mb-4">
+                            <span class="px-3 py-1 bg-accent-100 text-accent-800 rounded-full text-sm font-medium mr-3">
+                                Featured: March 1, 2024
+                            </span>
+                            <span class="px-3 py-1 bg-primary-100 text-primary-800 rounded-full text-sm">
+                                Source: St. Paul University Manila FB Page
+                            </span>
+                        </div>
+
+                        <h3 class="text-2xl lg:text-2xl font-bold text-primary mb-4">
+                            Library Attendance Monitoring System &<br>
+                            Multimedia Keys Monitoring System
+                        </h3>
+
+                        <p class="text-text-secondary mb-6 leading-relaxed">
+                            <strong>Overview:</strong><br>
+                            • Developed two internal systems for the ICT and Library departments using Java Spring Boot,
+                            PHP, and SQL, supporting over 1,000 users. Integrated QR-based attendance and asset tracking
+                            features, which were acknowledged during PAASCU accreditation.<br>
+                            • Provided post-deployment support including user training, bug resolution, performance
+                            optimization, and internal server management to ensure secure, uninterrupted system
+                            operations.
+                        </p>
+
+                        <!-- Key Metrics -->
+                        <div class="grid grid-cols-2 gap-4 mb-6">
+                            <div class="text-center p-4 bg-primary-50 rounded-lg">
+                                <div class="text-2xl font-bold text-primary">1,000+</div>
+                                <div class="text-sm text-text-secondary">Active Users</div>
+                            </div>
+                            <div class="text-center p-4 bg-secondary-50 rounded-lg">
+                                <div class="text-2xl font-bold text-secondary">QR-Code Based</div>
+                                <div class="text-sm text-text-secondary">Web Automation Systems</div>
+                            </div>
+                        </div>
+
+                        <!-- Technology Stack -->
+                        <div class="mb-6">
+                            <h4 class="font-semibold text-primary mb-3">Technology Stack</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-php text-gray-800 rounded-full text-sm">PHP</span>
+                                <span class="px-3 py-1 bg-sql text-gray-800 rounded-full text-sm">SQL</span>
+                                <span class="px-3 py-1 bg-java text-gray-800 rounded-full text-sm">Java (Spring
+                                    Boot)</span>
+                                <span class="px-3 py-1 bg-html text-gray-800 rounded-full text-sm">HTML</span>
+                                <span class="px-3 py-1 bg-css text-gray-800 rounded-full text-sm">CSS</span>
+                            </div>
+                        </div>
+
+                        <!-- Action Buttons -->
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <button
+                                class="inline-flex items-center justify-center px-6 py-3 border-2 border-primary text-primary text-white font-semibold rounded-lg bg-primary hover:bg-accent-700 hover:text-white transition-all duration-300"
+                                onclick="openProjectModal('spu-manila-information-systems')">
+                                View Case Study
+                            </button>
+                            <a href="https://www.facebook.com/share/p/19k4i2XbbD/"
+                                class="inline-flex items-center justify-center px-6 py-3 border-2 border-primary text-primary font-semibold rounded-lg hover:bg-accent-700 hover:text-white transition-all duration-300">
+                                View on Facebook
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Image Credits -->
+            <div class="mt-6 text-sm text-text-secondary">
+                <strong>Image Credits:</strong> St. Paul University Manila Facebook Page<br/> 
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Filter Section 
+    <section class="py-12 bg-white border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
+                Filter Controls
+                <div class="flex flex-wrap gap-4">
+                    <div class="flex items-center space-x-2">
+                        <img src="../images/filter.png" alt="Filter" class="w-5 h-5" />
+                        <span class="text-text-secondary font-medium">Filter by:</span>
+                    </div>
+
+                    <!-- Technology Filter  
+                    <select id="tech-filter"
+                        class="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary-500 focus:border-transparent">
+                        <option value="all">All Technologies</option>
+                        <option value="php">PHP</option>
+                        <option value="javascript">JavaScript</option>
+                        <option value="mysql">MySQL</option>
+                        <option value="unity">Unity</option>
+                        <option value="csharp">C#</option>
+                        <option value="bootstrap">bootstrap</option>
+                        <option value="python">Python</option>
+                    </select>
+
+                    <!-- Project Type Filter  
+                    <select id="type-filter"
+                        class="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary-500 focus:border-transparent">
+                        <option value="all">All Types</option>
+                        <option value="web">Web Development</option>
+                        <option value="game">Game Development</option>
+                        <option value="system">System Design</option>
+                        <option value="research">Research</option>
+                    </select>
+
+                    <!-- Impact Area Filter 
+                    <select id="impact-filter"
+                        class="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary-500 focus:border-transparent">
+                        <option value="all">All Impact Areas</option>
+                        <option value="education">Education</option>
+                        <option value="community">Community</option>
+                        <option value="business">Business</option>
+                    </select>
+                </div>
+
+                <!-- Search and Reset 
+                <div class="flex items-center space-x-4">
+                    <div class="relative">
+                        <input type="text" id="search-input" placeholder="Search projects..."
+                            class="pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary-500 focus:border-transparent w-64" />
+                        <img src="../images/search.png" alt="Search"
+                            class="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400" />
+                    </div>
+                    <button id="reset-filters"
+                        class="px-4 py-2 text-text-secondary hover:text-primary transition-colors duration-200">
+                        Reset Filters
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>-->
+
+    <!-- Projects Grid -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-primary mb-4">All Projects</h2>
+                <p class="text-xl text-text-secondary"> A comprehensive showcase of technical expertise and innovation —
+                    featuring both solo and collaborative work.</p>
+            </div>
+
+            <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project Card 1 -->
+                <div class="project-card bg-white rounded-lg shadow-subtle hover:shadow-strong transition-all duration-300 overflow-hidden"
+                    data-tech="mysql,java,php" data-type="system" data-impact="education,business">
+
+                    <!-- Project Image -->
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="../images/sister.jpg" alt="SPU Manila Information Systems"
+                            class="w-full h-full object-cover" />
+
+                        <div class="absolute top-4 left-4">
+                            <span
+                                class="px-2 py-1 bg-accent text-white rounded-full text-xs font-medium">Featured</span>
+                        </div>
+
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300">
+                            <div class="absolute bottom-4 left-4 right-4">
+                                <button
+                                    class="w-full bg-white text-primary py-2 rounded-lg font-medium hover:bg-primary hover:text-white transition-colors duration-200"
+                                    onclick="openProjectModal('spu-manila-information-systems')">
+                                    View Details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Content -->
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-primary mb-3">SPU Manila Information Systems</h3>
+                        <p class="text-text-secondary mb-4">
+                            <strong>Overview:</strong><br>
+                            Developed an internal QR-based system for monitoring library attendance and ICT equipment
+                            inventory —
+                            streamlining operations and supporting over 1,000 users across the university.
+                        </p>
+
+                        <!-- Tech Stack -->
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-php text-primary-800 rounded-full text-xs text-black">PHP</span>
+                            <span
+                                class="px-2 py-1 bg-java text-secondary-800 rounded-full text-xs text-black">Java</span>
+                            <span class="px-2 py-1 bg-css text-primary-800 rounded-full text-xs text-black">SQL</span>
+                        </div>
+
+                        <!-- User Count -->
+                        <div class="flex items-center justify-between">
+                            <div class="text-sm text-text-secondary">
+                                <span class="font-medium text-accent">1,000+</span> Users
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="project-card bg-white rounded-lg shadow-subtle hover:shadow-strong transition-all duration-300 overflow-hidden"
+                    data-tech="unity,csharp" data-type="game" data-impact="education">
+
+                    <!-- Project Image -->
+                    <div class="relative h-48 overflow-hidden">
+                        <div class="absolute top-4 left-4">
+                            <span class="px-2 py-1 bg-accent text-white rounded-full text-xs font-medium">Thesis</span>
+                        </div>
+                        <img src="../images/Oddinary-Times.png" alt="Oddinary Times"
+                            class="w-full h-full object-cover" />
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300">
+                            <div class="absolute bottom-4 left-4 right-4">
+                                <button
+                                    class="w-full bg-white text-primary py-2 rounded-lg font-medium hover:bg-primary hover:text-white transition-colors duration-200"
+                                    onclick="openProjectModal('game-system-thesis')">
+                                    View Details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Content -->
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-primary mb-3">Oddinary Times: A 2D PC Game</h3>
+                        <p class="text-text-secondary mb-4">
+                            <strong>Overview:</strong><br>
+                            An interactive educational platform that teaches emergency preparedness and response through
+                            gamification — built using Unity and C# to deliver an engaging learning experience.
+                        </p>
+
+                        <!-- Tech Stack -->
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-php text-primary-800 rounded-full text-xs">Unity</span>
+                            <span class="px-2 py-1 bg-php text-secondary-800 rounded-full text-xs">C#</span>
+                            <span class="px-2 py-1 bg-accent-100 text-accent-800 rounded-full text-xs">Game
+                                Design</span>
+                        </div>
+
+                        <!-- Key Metric -->
+                        <div class="flex items-center justify-between">
+                            <div class="text-sm text-text-secondary">
+                                <span class="font-medium text-accent">95%+</span> Survey Satisfaction
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="project-card bg-white rounded-lg shadow-subtle hover:shadow-strong transition-all duration-300 overflow-hidden"
+                    data-tech="javascript,php,mysql" data-type="research" data-impact="education">
+
+                    <!-- Project Image -->
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="../images/ingat.jpg" alt="INGAT - Hackathon Project"
+                            class="w-full h-full object-cover" />
+                        <div class="absolute top-4 left-4">
+                            <span
+                                class="px-2 py-1 bg-accent text-white rounded-full text-xs font-medium">Hackathon</span>
+                        </div>
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300">
+                            <div class="absolute bottom-4 left-4 right-4">
+                                <button
+                                    class="w-full bg-white text-primary py-2 rounded-lg font-medium hover:bg-primary hover:text-white transition-colors duration-200"
+                                    onclick="openProjectModal('hackathon-project')">
+                                    View Details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Content -->
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-primary mb-3">INGAT</h3>
+                        <p class="text-text-secondary mb-4">
+                            <strong>Overview:</strong><br>
+                            INGAT is a mobile-based solution that
+                            reimagines crime awareness and community safety. It delivers real-time crime mapping and
+                            safety alerts through a user-friendly smartphone interface.
+                        </p>
+
+                        <!-- Tech Stack -->
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-primary-100 text-primary-800 rounded-full text-xs">Flutter</span>
+                            <span
+                                class="px-2 py-1 bg-secondary-100 text-secondary-800 rounded-full text-xs">Notion</span>
+                            <span class="px-2 py-1 bg-accent-100 text-accent-800 rounded-full text-xs">Innovation</span>
+                        </div>
+
+                        <!-- Key Metric -->
+                        <div class="flex items-center justify-between">
+                            <div class="text-sm text-text-secondary">
+                                <span class="font-medium text-accent">2 Days</span> Development Time
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 4 -->
+                <div class="project-card bg-white rounded-lg shadow-subtle hover:shadow-strong transition-all duration-300 overflow-hidden"
+                    data-tech="javascript,php,bootstrap" data-type="web" data-impact="community">
+
+                    <!-- Project Image -->
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="../images/payo.png" alt="Payo Project - Appointment Scheduling System"
+                            class="w-full h-full object-cover" />
+                        <div class="absolute top-4 left-4">
+                            <span
+                                class="px-2 py-1 bg-accent text-white rounded-full text-xs font-medium">Collaboration</span>
+                        </div>
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300">
+                            <div class="absolute bottom-4 left-4 right-4">
+                                <button
+                                    class="w-full bg-white text-primary py-2 rounded-lg font-medium hover:bg-primary hover:text-white transition-colors duration-200"
+                                    onclick="openProjectModal('guidance-project')">
+                                    View Details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Content -->
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-primary mb-3">Payo</h3>
+                        <p class="text-text-secondary mb-4"><strong>Overview:</strong><br>
+                            Developed a university-wide appointment scheduling system for the Guidance and Counseling
+                            Office of St. Paul University Manila. The system was tailored to meet institutional
+                            requirements and streamline student appointment management.
+                        </p>
+
+                        <!-- Tech Stack -->
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-primary-100 text-primary-800 rounded-full text-xs">Flutter</span>
+                            <span
+                                class="px-2 py-1 bg-secondary-100 text-secondary-800 rounded-full text-xs">Agile</span>
+                            <span class="px-2 py-1 bg-accent-100 text-accent-800 rounded-full text-xs">Jira</span>
+                        </div>
+
+                        <!-- Key Info -->
+                        <div class="flex items-center justify-between">
+                            <div class="text-sm text-text-secondary">
+                                <span class="font-medium text-accent">Project</span> — Mobile App & Emerging Tech
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Project Card 5 -->
+                <div class="project-card bg-white rounded-lg shadow-subtle hover:shadow-strong transition-all duration-300 overflow-hidden"
+                    data-tech="php,mysql,javascript" data-type="system" data-impact="business">
+
+                    <!-- Project Image -->
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="../images/pygame.jpg" alt="SPU Manila Snake Game"
+                            class="w-full h-full object-cover" />
+                        <div class="absolute top-4 left-4">
+                            <span class="px-2 py-1 bg-accent text-white rounded-full text-xs font-medium">Open
+                                House</span>
+                        </div>
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300">
+                            <div class="absolute bottom-4 left-4 right-4">
+                                <button
+                                    class="w-full bg-white text-primary py-2 rounded-lg font-medium hover:bg-primary hover:text-white transition-colors duration-200"
+                                    onclick="openProjectModal('open-house-snake-game')">
+                                    View Details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Content -->
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-primary mb-3">SPU - Manila Snake Game</h3>
+                        <p class="text-text-secondary mb-4">
+                            <strong>Overview:</strong><br>
+                            This game was showcased during the university’s
+                            Open House event to introduce prospective students to programming through an engaging,
+                            SPU-themed twist on the classic Snake game.<br>
+                            <strong>Game Developer:</strong> John Paolo Rosales
+                        </p>
+
+                        <!-- Tech Stack -->
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-primary-100 text-primary-800 rounded-full text-xs">Python</span>
+                            <span class="px-2 py-1 bg-secondary-100 text-secondary-800 rounded-full text-xs">Game
+                                Development</span>
+                            <span class="px-2 py-1 bg-accent-100 text-accent-800 rounded-full text-xs">Open House</span>
+                        </div>
+
+                        <!-- Key Metric -->
+                        <div class="flex items-center justify-between">
+                            <div class="text-sm text-text-secondary">
+                                <span class="font-medium text-accent">50+</span> Students Engaged
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Project Card 6 -->
+                <div class="project-card bg-white rounded-lg shadow-subtle hover:shadow-strong transition-all duration-300 overflow-hidden"
+                    data-tech="javascript,bootstrap" data-type="web" data-impact="education">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="../images/automation-fb.png" alt="Student Portal"
+                            class="w-full h-full object-cover" />
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300">
+                            <div class="absolute bottom-4 left-4 right-4">
+                                <button
+                                    class="w-full bg-white text-primary py-2 rounded-lg font-medium hover:bg-primary hover:text-white transition-colors duration-200"
+                                    onclick="openProjectModal('fb-automation-selenium')">
+                                    View Details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-primary mb-3">FB Sign-Up Test Automation</h3>
+                        <p class="text-text-secondary mb-4"><strong>Overview:</strong><br>
+                            Developed an automated testing suite using Python and Selenium to validate Facebook’s
+                            Sign-Up functionality — with special focus on mobile number and password field
+                            validations.Ensures robust form behavior through simulated real-world scenarios.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-primary-100 text-primary-800 rounded-full text-xs">Python</span>
+                            <span
+                                class="px-2 py-1 bg-secondary-100 text-secondary-800 rounded-full text-xs">Selenium</span>
+                            <span class="px-2 py-1 bg-accent-100 text-accent-800 rounded-full text-xs">Web
+                                Automation</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="text-sm text-text-secondary">
+                                <span class="font-medium text-accent">3.7 / 4.0</span> Final Grade
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Image Credits -->
+            <div class="mt-6 text-sm text-text-secondary">
+                <strong>Image Credits:</strong> St. Paul University Manila Facebook Page<br />
+                <em>All images featured are either sourced from the official pages or personally captured by John
+                    Rosales.</em>
+            </div>
+            <!-- Load More Button
+            <div class="text-center mt-12">
+                <button id="load-more-btn" class="btn-secondary">
+                    Load More Projects
+                </button>
+            </div> -->
+
+        </div>
+    </section>
+
+    <!-- Verified Certifications Carousel -->
+    <section class="py-20 bg-gradient-to-br">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-primary mb-4">Verified Certifications</h2>
+                <p class="text-xl text-text-secondary">
+                    A curated collection of certifications from 2024 to 2025 earned through IBM, Microsoft, Cisco, and
+                    Udemy. These credentials span artificial intelligence, data science, cloud platforms, networking,
+                    software design, and programming—demonstrating a strong foundation in full-stack development and
+                    systems thinking.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Artificial Intelligence Fundamentals -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <img src="../images/Certificate Badges/1.png" alt="Artificial Intelligence Fundamentals"
+                        class="w-full h-40 object-contain mb-4">
+                    <h3 class="text-lg font-semibold text-primary">Artificial Intelligence Fundamentals</h3>
+                    <p class="text-text-secondary mb-4"><strong>IBM (2025)</strong><br>
+                        Completed foundational training in Artificial Intelligence, covering key concepts in machine
+                        learning, neural networks, and real-world AI applications using Python.
+                    </p>
+                    <a href="https://www.credly.com/badges/3ef1b84d-3642-4f7e-acfb-86f8d4d5f89b" rel="noopener"
+                        target="_blank" class="text-sm text-accent font-semibold hover:underline">View Credential</a>
+                </div>
+
+                <!-- Python for Data Science -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <img src="../images/Certificate Badges/2.png" alt="Python for Data Science"
+                        class="w-full h-40 object-contain mb-4">
+                    <h3 class="text-lg font-semibold text-primary">Python for Data Science</h3>
+                    <p class="text-text-secondary mb-4"><strong>IBM (2025)</strong><br>
+                        Explored essential Python techniques for analyzing and visualizing data using Pandas, NumPy, and
+                        Matplotlib. Built a solid base for data-driven decision-making.
+                    </p>
+                    <a href="https://www.credly.com/badges/a2aa96d8-6492-49aa-a7ec-0343f9e32243" rel="noopener"
+                        target="_blank" class="text-sm text-accent font-semibold hover:underline">View Credential</a>
+                </div>
+
+                <!-- Agile Explorer -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <img src="../images/Certificate Badges/3.png" alt="Agile Explorer"
+                        class="w-full h-40 object-contain mb-4">
+                    <h3 class="text-lg font-semibold text-primary">Agile Explorer</h3>
+                    <p class="text-text-secondary mb-4"><strong>IBM (2025)</strong><br>
+                        Learned Agile development principles, Scrum methodology, and iterative delivery practices.
+                        Reinforced my ability to collaborate and deliver continuously.
+                    </p>
+                    <a href="https://www.credly.com/badges/b00edf45-3fbc-4b5c-aa83-04c79acd73f6" rel="noopener"
+                        target="_blank" class="text-sm text-accent font-semibold hover:underline">View Credential</a>
+                </div>
+
+                <!-- User Experience Design Fundamentals -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <img src="../images/Certificate Badges/4.png" alt="User Experience Design Fundamentals"
+                        class="w-full h-40 object-contain mb-4">
+                    <h3 class="text-lg font-semibold text-primary">User Experience Design Fundamentals</h3>
+                    <p class="text-text-secondary mb-4"><strong>IBM (2025)</strong><br>
+                        Gained practical skills in UX design, user-centered development, and usability testing to craft
+                        accessible, user-friendly digital experiences.
+                    </p>
+                    <a href="https://www.credly.com/badges/54231dc6-a438-4da7-a32d-5997fead5080" rel="noopener"
+                        target="_blank" class="text-sm text-accent font-semibold hover:underline">View Credential</a>
+                </div>
+
+                <!-- Big Data Foundations - Level 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <img src="../images/Certificate Badges/5.png" alt="Big Data Foundations"
+                        class="w-full h-40 object-contain mb-4">
+                    <h3 class="text-lg font-semibold text-primary">Big Data Foundations - Level 1</h3>
+                    <p class="text-text-secondary mb-4"><strong>IBM (2024)</strong><br>
+                        Introduced to the Big Data ecosystem, including Hadoop and Spark. Focused on managing and
+                        extracting value from large-scale datasets.
+                    </p>
+                    <a href="https://www.credly.com/badges/5f9efc88-897f-40dd-a8a3-737d36266ffe" rel="noopener"
+                        target="_blank" class="text-sm text-accent font-semibold hover:underline">View Credential</a>
+                </div>
+
+                <!-- Networking Basics -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <img src="../images/Certificate Badges/6.png" alt="Networking Basics"
+                        class="w-full h-40 object-contain mb-4">
+                    <h3 class="text-lg font-semibold text-primary">Networking Basics</h3>
+                    <p class="text-text-secondary mb-4"><strong>Cisco (2024)</strong><br>
+                        Covered fundamentals of networking, including IP addressing, protocols, routing, and switching.
+                        Strengthened understanding of digital communication.
+                    </p>
+                    <a href="https://www.credly.com/badges/e15a9d9e-5d5c-4505-9dc3-11e54a8ef6de" rel="noopener"
+                        target="_blank" class="text-sm text-accent font-semibold hover:underline">View Credential</a>
+                </div>
+
+                <!-- AZ-900 Microsoft Azure Fundamentals -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <img src="../images/Certificate Badges/7.png" alt="AZ-900 Azure Fundamentals"
+                        class="w-full h-40 object-contain mb-4">
+                    <h3 class="text-lg font-semibold text-primary">AZ-900: Microsoft Azure Fundamentals</h3>
+                    <p class="text-text-secondary mb-4"><strong>Microsoft (2024)</strong><br>
+                        Built cloud fluency in core Azure services, security, pricing, and deployment models. Prepared
+                        to build cloud-native and hybrid applications.
+                    </p>
+                    <a href="https://www.credly.com/badges/99ec1e0d-2bd5-458a-9d72-ad1e3e510586" rel="noopener"
+                        target="_blank" class="text-sm text-accent font-semibold hover:underline">View Credential</a>
+                </div>
+
+                <!-- Data Structures and Algorithms in Java -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <img src="../images/Certificate Badges/8.png" alt="Data Structures and Algorithms in Java"
+                        class="w-full h-40 object-contain mb-4">
+                    <h3 class="text-lg font-semibold text-primary">Intro to Data Structures & Algorithms in Java</h3>
+                    <p class="text-text-secondary mb-4"><strong>Udemy (2024)</strong><br>
+                        Mastered key data structures and algorithmic patterns using Java. Improved problem-solving and
+                        coding interview readiness.
+                    </p>
+                    <a href="https://www.udemy.com/certificate/UC-d40e4aee-4fda-49b9-8688-8f1dbdf1b4e8/" rel="noopener"
+                        target="_blank" class="text-sm text-accent font-semibold hover:underline">View Credential</a>
+                </div>
+
+                <!-- OOP in Java -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <img src="../images/Certificate Badges/9.png" alt="Object-Oriented Programming in Java"
+                        class="w-full h-40 object-contain mb-4">
+                    <h3 class="text-lg font-semibold text-primary">Object-Oriented Programming in Java</h3>
+                    <p class="text-text-secondary mb-4"><strong>Udemy (2024)</strong><br>
+                        Learned the foundations of OOP: encapsulation, inheritance, abstraction, and polymorphism.
+                        Applied these in structured Java development.
+                    </p>
+                    <a href="https://www.udemy.com/certificate/UC-8f2c41e2-301c-495c-b890-86d866cca215/" rel="noopener"
+                        target="_blank" class="text-sm text-accent font-semibold hover:underline">View Credential</a>
+                </div>
+
+                <!-- UML and Object-Oriented Design -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <img src="../images/Certificate Badges/10.png" alt="UML and Object-Oriented Design"
+                        class="w-full h-40 object-contain mb-4">
+                    <h3 class="text-lg font-semibold text-primary">UML and Object-Oriented Design</h3>
+                    <p class="text-text-secondary mb-4"><strong>Udemy (2024)</strong><br>
+                        Learned to create UML diagrams like use case, class, and sequence diagrams. Modeled system
+                        architecture using OOP principles.
+                    </p>
+                    <a href="https://www.udemy.com/certificate/UC-3804bd43-45d9-4db2-80bb-512364e3b9e2/" rel="noopener"
+                        target="_blank" class="text-sm text-accent font-semibold hover:underline">View Credential</a>
+                </div>
+
+                <!-- SQL with MySQL -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <img src="../images/Certificate Badges/11.png" alt="SQL with MySQL"
+                        class="w-full h-40 object-contain mb-4">
+                    <h3 class="text-lg font-semibold text-primary">SQL - Introduction to SQL with MySQL</h3>
+                    <p class="text-text-secondary mb-4"><strong>Udemy (2024)</strong><br>
+                        Gained proficiency in SQL for querying and managing databases. Applied joins, filtering,
+                        aggregation, and schema management in MySQL.
+                    </p>
+                    <a href="https://www.udemy.com/certificate/UC-63a60716-6549-4cc8-9f5e-28aa3a2ec27f/" rel="noopener"
+                        target="_blank" class="text-sm text-accent font-semibold hover:underline">View Credential</a>
+                </div>
+
+                <!-- Intro to PHP for Web Development -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <img src="../images/Certificate Badges/12.png" alt="Intro to PHP for Web Development"
+                        class="w-full h-40 object-contain mb-4">
+                    <h3 class="text-lg font-semibold text-primary">Intro to PHP for Web Development</h3>
+                    <p class="text-text-secondary mb-4"><strong>Udemy (2024)</strong><br>
+                        Learned basic PHP scripting, form handling, and integration with MySQL. Developed dynamic
+                        websites with server-side functionality.
+                    </p>
+                    <a href="https://www.udemy.com/certificate/UC-ab7a63f8-c73d-4dc4-936c-f6617df10fc0/" rel="noopener"
+                        target="_blank" class="text-sm text-accent font-semibold hover:underline">View Credential</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-br from-primary to-secondary">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl lg:text-4xl font-bold text-white mb-6">Ready to Collaborate?</h2>
+            <p class="text-xl text-primary-100 mb-8">Let's discuss how we can work together to create innovative
+                solutions that make a real impact.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact.html"
+                    class="inline-flex items-center justify-center px-8 py-4 bg-white text-primary font-semibold rounded-lg hover:bg-accent-700 hover:text-white transition-colors duration-300">
+                    <img src="../images/get-in-touch.png" alt="Contact" class="w-5 h-5 mr-2" />
+                    Get In Touch
+                </a>
+                <a href="services.html"
+                    class="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white font-semibold rounded-lg hover:bg-accent-700 hover:text-primary transition-all duration-300">
+                    <img src="../images/get-in-touch.png" alt="Services" class="w-5 h-5 mr-2" />
+                    View Services
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Brand -->
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div
+                            class="w-10 h-10 bg-gradient-to-br from-secondary to-accent rounded-lg flex items-center justify-center">
+                            <span class="text-white font-bold text-lg">JR</span>
+                        </div>
+                        <span class="text-xl font-semibold">John Rosales</span>
+                    </div>
+                    <p class="text-primary-200 mb-6">Computer Science Graduate dedicated to creating innovative
+                        solutions that strengthen communities and improve lives through technology.</p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.linkedin.com/in/johnrosalesss/"
+                            class="text-primary-200 hover:text-white transition-colors duration-200">
+                            <img src="../images/linkedIn-logo.png" alt="LinkedIn" class="w-6 h-6" />
+                        </a>
+                        <a href="https://github.com/johnrosalesss"
+                            class="text-primary-200 hover:text-white transition-colors duration-200">
+                            <img src="../images/github.png" alt="GitHub" class="w-6 h-6" />
+                        </a>
+
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4 text-white">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="home.html"
+                                class="text-primary-200 hover:text-white transition-colors duration-200">Home</a></li>
+                        <li><a href="about.html"
+                                class="text-primary-200 hover:text-white transition-colors duration-200">About</a>
+                        </li>
+                        <li><a href="services.html"
+                                class="text-primary-200 hover:text-white transition-colors duration-200">Services</a>
+                        </li>
+                        <li><a href="experience.html"
+                                class="text-primary-200 hover:text-white transition-colors duration-200">Experience</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4 text-white">Get In Touch</h3>
+                    <ul class="space-y-2">
+                        <li class="text-primary-200">Manila, Philippines</li>
+                        <li><a href="mailto:johnpaolorosales2@gmail.com"
+                                class="text-primary-200 hover:text-white transition-colors duration-200">johnpaolorosales2@gmail.com</a>
+                        </li>
+                        <li><a href="https://linkit.asia/profile/5517907315"
+                                class="text-primary-200 hover:text-white transition-colors duration-200">Contact
+                                Form</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-primary-700 mt-8 pt-8 text-center">
+                <p class="text-primary-200">© 2025 John Paolo M. Rosales. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Project Modal -->
+    <div id="project-modal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden">
+        <div class="flex items-center justify-center min-h-screen p-4">
+            <div class="bg-white rounded-lg shadow-modal max-w-4xl w-full max-h-screen overflow-y-auto">
+                <div class="p-8">
+                    <div class="flex items-center justify-between mb-6">
+                        <h2 id="modal-title" class="text-2xl font-bold text-primary">Project Details</h2>
+                        <button onclick="closeProjectModal()" class="text-text-secondary hover:text-primary">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div id="modal-content">
+                        <!-- Dynamic content will be loaded here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function () {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Filter functionality
+        const techFilter = document.getElementById('tech-filter');
+        const typeFilter = document.getElementById('type-filter');
+        const impactFilter = document.getElementById('impact-filter');
+        const searchInput = document.getElementById('search-input');
+        const resetButton = document.getElementById('reset-filters');
+        const projectCards = document.querySelectorAll('.project-card');
+
+        function filterProjects() {
+            const techValue = techFilter.value;
+            const typeValue = typeFilter.value;
+            const impactValue = impactFilter.value;
+            const searchValue = searchInput.value.toLowerCase();
+
+            projectCards.forEach(card => {
+                const techData = card.dataset.tech;
+                const typeData = card.dataset.type;
+                const impactData = card.dataset.impact;
+                const title = card.querySelector('h3').textContent.toLowerCase();
+                const description = card.querySelector('p').textContent.toLowerCase();
+
+                const techMatch = techValue === 'all' || techData.includes(techValue);
+                const typeMatch = typeValue === 'all' || typeData === typeValue;
+                const impactMatch = impactValue === 'all' || impactData === impactValue;
+                const searchMatch = searchValue === '' || title.includes(searchValue) || description.includes(searchValue);
+
+                if (techMatch && typeMatch && impactMatch && searchMatch) {
+                    card.style.display = 'block';
+                    card.classList.add('animate-fade-in');
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        techFilter.addEventListener('change', filterProjects);
+        typeFilter.addEventListener('change', filterProjects);
+        impactFilter.addEventListener('change', filterProjects);
+        searchInput.addEventListener('input', filterProjects);
+
+        resetButton.addEventListener('click', function () {
+            techFilter.value = 'all';
+            typeFilter.value = 'all';
+            impactFilter.value = 'all';
+            searchInput.value = '';
+            filterProjects();
+        });
+
+        // Project modal functionality
+        function openProjectModal(projectId) {
+            const modal = document.getElementById('project-modal');
+            const modalTitle = document.getElementById('modal-title');
+            const modalContent = document.getElementById('modal-content');
+
+            const projectData = {
+                'spu-manila-information-systems': {
+                    title: 'SPU Manila Information Systems',
+                    content: `
+        <div class="space-y-6">
+            <img src="../images/sister.jpg" alt="SPU Manila" class="w-full h-64 object-cover rounded-lg">
+            
+            <div class="flex items-center gap-3 flex-wrap">
+                <span class="px-3 py-1 bg-accent-100 text-accent-800 rounded-full text-sm font-medium">
+                    Featured: March 1, 2024
+                </span>
+                <span class="px-3 py-1 bg-primary-100 text-primary-800 rounded-full text-sm">
+                    Source: St. Paul University Manila FB Page
+                </span>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-primary-50 p-4 rounded-lg text-center">
+                    <div class="text-2xl font-bold text-primary">1,000+</div>
+                    <div class="text-text-secondary">Active Users</div>
+                </div>
+                <div class="bg-secondary-50 p-4 rounded-lg text-center">
+                    <div class="text-2xl font-bold text-secondary">QR-Code Based</div>
+                    <div class="text-text-secondary">Web Automation Systems</div>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="text-xl font-semibold text-primary mb-3">Overview</h3>
+                <p class="text-text-secondary">
+                    Developed and deployed two enterprise-grade systems for St. Paul University Manila:
+                    <strong>Library Attendance Monitoring System</strong> and <strong>Multimedia Keys Monitoring System</strong>.
+                    These internal tools were built using Java Spring Boot, PHP, and SQL to support over 1,000 users.
+                    Features include QR-based user authentication, real-time logging, and equipment tracking. These systems
+                    were acknowledged during the university’s <strong>PAASCU accreditation</strong>.
+                </p>
+            </div>
+
+            <div>
+                <h3 class="text-xl font-semibold text-primary mb-3">Technology Stack</h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 bg-php text-gray-800 rounded-full text-sm">PHP</span>
+                    <span class="px-3 py-1 bg-sql text-gray-800 rounded-full text-sm">SQL</span>
+                    <span class="px-3 py-1 bg-java text-gray-800 rounded-full text-sm">Java (Spring Boot)</span>
+                    <span class="px-3 py-1 bg-html text-gray-800 rounded-full text-sm">HTML</span>
+                    <span class="px-3 py-1 bg-css text-gray-800 rounded-full text-sm">CSS</span>
+                    <span class="px-3 py-1 bg-accent-100 text-accent-800 rounded-full text-sm">GitHub</span>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="text-xl font-semibold text-primary mb-3">My Role</h3>
+                <ul class="list-disc list-inside text-text-secondary space-y-1">
+                    <li>Database Developer (Java, PHP, SQL)</li>
+                    <li>Designed and implemented database architecture</li>
+                    <li>Led QR-based user tracking system integration</li>
+                    <li>Provided on-site training and documentation for end-users</li>
+                    <li>Managed server deployment and internal network support</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-xl font-semibold text-primary mb-3">Results</h3>
+                <ul class="list-disc list-inside text-text-secondary space-y-1">
+                    <li>Successfully supported over 1,000 students and staff across departments</li>
+                    <li>Recognized during PAASCU accreditation for improving operational efficiency</li>
+                    <li>Delivered stable, secure systems with minimal downtime post-deployment</li>
+                </ul>
+            </div>
+
+            <div class="text-sm text-text-secondary italic">
+                ⚠️ Due to a non-disclosure agreement (NDA) and the sensitive nature of users' data, source code and live demo access cannot be publicly provided.
+            </div>
+
+            <!-- Image Credits -->
+            <div class="mt-6 text-sm text-text-secondary">
+                <strong>Image Credits:</strong> 
+                <a href="https://www.facebook.com/share/p/1Cr3B6UygV/" target="_blank" class="text-primary underline hover:text-secondary">
+                    St. Paul University Manila Facebook Page
+                </a>
+            </div>
+        </div>
+    `
+                },
+
+                'game-system-thesis': {
+                    title: 'Oddinary Times: A 2D Pixelated PC Game',
+                    content: `
+    <div class="space-y-6">
+        <img src="../images/Oddinary-Times.png" alt="Oddinary-Times.png" class="w-full h-64 object-cover rounded-lg" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-primary-50 p-4 rounded-lg text-center">
+                <div class="text-2xl font-bold text-primary">95%+</div>
+                <div class="text-text-secondary">Survey Satisfaction</div>
+            </div>
+            <div class="bg-secondary-50 p-4 rounded-lg text-center">
+                <div class="text-2xl font-bold text-secondary">Gamified</div>
+                <div class="text-text-secondary">Emergency Education</div>
+            </div>
+            <div class="bg-accent-50 p-4 rounded-lg text-center">
+                <div class="text-2xl font-bold text-accent">Thesis</div>
+                <div class="text-text-secondary">Capstone Project</div>
+            </div>
+        </div>
+
+        <div>
+            <h3 class="text-xl font-semibold text-primary mb-3">Overview</h3>
+            <p class="text-text-secondary">
+                <strong>Oddinary Times</strong> is a 2D pixelated PC game built with Unity and C# that teaches players emergency preparedness and disaster response through interactive storytelling and mini-games. Developed as a thesis project, the game leverages gamification to make learning safety protocols engaging and memorable.
+            </p>
+        </div>
+
+        <div>
+            <h3 class="text-xl font-semibold text-primary mb-3">Objective</h3>
+            <p class="text-text-secondary">
+                To raise awareness and build essential life-saving skills among students by providing a compelling educational experience within a simulated emergency environment.
+            </p>
+        </div>
+
+        <div>
+            <h3 class="text-xl font-semibold text-primary mb-3">Technology Stack</h3>
+            <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1 bg-primary-100 text-primary-800 rounded-full text-sm">Unity</span>
+                <span class="px-3 py-1 bg-secondary-100 text-secondary-800 rounded-full text-sm">C#</span>
+                <span class="px-3 py-1 bg-accent-100 text-accent-800 rounded-full text-sm">Game Design</span>
+                <span class="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm">Visual Studio</span>
+                <span class="px-3 py-1 bg-accent-100 text-accent-800 rounded-full text-sm">GitHub</span>
+            </div>
+        </div>
+
+        <div>
+            <h3 class="text-xl font-semibold text-primary mb-3">Key Features</h3>
+            <ul class="list-disc list-inside text-text-secondary space-y-1">
+                <li>Story-driven 2D pixel art gameplay</li>
+                <li>Multiple emergency scenarios with interactive choices</li>
+                <li>Mini-games simulating real-life emergency protocols</li>
+                <li>Built-in quiz assessments to reinforce learning</li>
+                <li>Engaging sound design and animations</li>
+            </ul>
+        </div>
+
+        <div>
+            <h3 class="text-xl font-semibold text-primary mb-3">Impact</h3>
+            <ul class="list-disc list-inside text-text-secondary space-y-1">
+                <li>Received over 95% satisfaction rate from testers including gamers, disaster safety officers, and devs</li>
+                <li>Praised by faculty and peers for creative educational impact</li>
+                <li>Recognized during thesis evaluation for effective integration of learning outcomes into gameplay</li>
+                <li>Demonstrated potential as a supplemental learning tool for disaster risk reduction education</li>
+            </ul>
+        </div>
+
+        <div class="border-t border-gray-200 pt-4 text-sm text-text-secondary">
+            <p><strong>Note:</strong> Source code is available upon request due to sensitive content and academic restrictions. This project was featured in <a href="https://www.facebook.com/photo/?fbid=1113018340865077&set=a.629989982501251" class="text-primary underline" target="_blank" rel="noopener noreferrer">Research 6.0, St. Paul University Manila's Annual Research Forum</a>.</p>
+        </div>
+    </div>
+    `
+                },
+
+                'hackathon-project': {
+                    title: 'INGAT: The Future of Crime Awareness Technology and Community Safety',
+                    content: `
+    <div class="space-y-6">
+        <img src="../images/ingat.jpg" alt="INGAT - Crime Awareness Hackathon Project" class="w-full h-64 object-cover rounded-lg" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-primary-50 p-4 rounded-lg text-center">
+                <div class="text-2xl font-bold text-primary">2 Days</div>
+                <div class="text-text-secondary">Rapid Prototyping</div>
+            </div>
+            <div class="bg-secondary-50 p-4 rounded-lg text-center">
+                <div class="text-2xl font-bold text-secondary">3</div>
+                <div class="text-text-secondary">Team Members</div>
+            </div>
+        </div>
+
+        <div>
+            <h3 class="text-xl font-semibold text-primary mb-3">Challenge</h3>
+            <p class="text-text-secondary">
+                Address the rising need for smarter crime awareness tools that empower communities to act and respond in real-time — with limited development time and resources.
+            </p>
+        </div>
+
+        <div>
+            <h3 class="text-xl font-semibold text-primary mb-3">Solution</h3>
+            <p class="text-text-secondary">
+                We built <strong>INGAT</strong>, a mobile-first platform that offers real-time crime mapping, geo-tagged reports, safety alerts, and neighborhood insights — all powered by a seamless and intuitive user interface.
+            </p>
+        </div>
+
+        <div>
+            <h3 class="text-xl font-semibold text-primary mb-3">Technology Stack</h3>
+            <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1 bg-primary-100 text-primary-800 rounded-full text-sm">Flutter</span>
+                <span class="px-3 py-1 bg-secondary-100 text-secondary-800 rounded-full text-sm">Notion</span>
+                <span class="px-3 py-1 bg-accent-100 text-accent-800 rounded-full text-sm">GitHub</span>
+                <span class="px-3 py-1 bg-accent-100 text-accent-800 rounded-full text-sm">Figma</span>
+            </div>
+        </div>
+
+        <div>
+            <h3 class="text-xl font-semibold text-primary mb-3">Key Features</h3>
+            <ul class="list-disc list-inside text-text-secondary space-y-1">
+                <li>Live crime map visualization based on user and public data</li>
+                <li>Anonymous tip reporting system</li>
+                <li>Location-based safety alerts and incident notifications</li>
+                <li>Community bulletin and local watch integration</li>
+                <li>Responsive, mobile-first UX built for accessibility</li>
+            </ul>
+        </div>
+
+        <div>
+            <h3 class="text-xl font-semibold text-primary mb-3">Impact</h3>
+            <ul class="list-disc list-inside text-text-secondary space-y-1">
+                <li>Promotes proactive safety awareness across communities</li>
+                <li>Encourages citizen participation through smart reporting</li>
+                <li>Showcases how rapid tech deployment can aid public service</li>
+            </ul>
+        </div>
+
+        <div class="text-sm text-text-secondary mt-6">
+            <strong>Event:</strong> InnOlympics Hackathon, April 2024 – held at PLM and WhiteCloak Technologies. <br/>
+            <strong>Documentation:</strong> <a href="https://crystalline-dewberry-1d8.notion.site/INGAT-The-Future-of-Crime-Awareness-Technology-and-Community-Safety-1ade0822cce34457b0fa9f0cba56a9e0" target="_blank" class="text-primary underline hover:text-secondary">View Notion Summary</a>
+        </div>
+    </div>
+    `
+                },
+
+                'guidance-project': {
+                    title: 'Payo',
+                    content: `
+        <div class="space-y-6">
+            <img src="../images/payo.png" alt="../images/payo.png" class="w-full h-64 object-cover rounded-lg" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+
+            <div>
+                <h3 class="text-xl font-semibold text-primary mb-3">Role</h3>
+                <p class="text-text-secondary">
+                    Served as Business Development Lead for a university-wide counseling appointment platform. Led a six-member team collaborating with UI/UX designers and developers. Acted as the liaison between technical contributors and key stakeholders, including the Head of the Student Affairs Office, Head of the Guidance Office, and licensed Guidance Counselors. Task management and progress tracking were done through Jira to ensure timely, user-centered delivery.
+                </p>
+            </div>
+
+            <div>
+                <h3 class="text-xl font-semibold text-primary mb-3">Challenge</h3>
+                <p class="text-text-secondary">Manual scheduling and documentation processes in the university’s guidance services led to inefficiencies, missed follow-ups, and difficulty in managing student support data securely.</p>
+            </div>
+
+            <div>
+                <h3 class="text-xl font-semibold text-primary mb-3">Solution</h3>
+                <p class="text-text-secondary">Developed a centralized web application to automate counseling appointments, streamline documentation, and securely manage case notes—improving access for both students and counselors.</p>
+            </div>
+
+            <div>
+                <h3 class="text-xl font-semibold text-primary mb-3">Technology Stack</h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 bg-primary-100 text-primary-800 rounded-full text-sm">Flutter</span>
+                    <span class="px-3 py-1 bg-secondary-100 text-secondary-800 rounded-full text-sm">GitHub</span>
+                    <span class="px-3 py-1 bg-accent-100 text-accent-800 rounded-full text-sm">Jira</span>
+                    <span class="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm">Google Workspace</span>
+                    <span class="px-3 py-1 bg-gray-200 text-gray-800 rounded-full text-sm">Team Leadership</span>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="text-xl font-semibold text-primary mb-3">Key Features</h3>
+                <ul class="list-disc list-inside text-text-secondary space-y-1">
+                    <li>Online counseling appointment scheduling</li>
+                    <li>Student mental health case tracking</li>
+                    <li>Secure documentation of counseling sessions</li>
+                    <li>Role-based access for counselors, admins, and students</li>
+                    <li>Automated reminders and follow-up tracking</li>
+                </ul>
+            </div>
+
+            <div class="text-sm text-text-secondary italic">
+                ⚠️ Due to a non-disclosure agreement (NDA) and the sensitive nature of student mental health data, source code and live demo access cannot be publicly provided.
+            </div>
+        </div>
+    `
+                },
+
+                'fb-automation-selenium': {
+                    title: 'Facebook Sign-Up Test Automation',
+                    content: `
+        <div class="space-y-6">
+            <img src="../images/automation-fb.png" alt="../images/automation-fb.png" class="w-full h-64 object-cover rounded-lg" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+
+            <div>
+                <h3 class="text-xl font-semibold text-primary mb-3">🚀 Overview</h3>
+                <p class="text-text-secondary">
+                    This project contains automated test cases designed to validate Facebook’s Sign-Up functionality, 
+                    with a focus on verifying the behavior of the Mobile Number and Password input fields. It leverages 
+                    <strong>Robot Framework</strong> with <strong>SeleniumLibrary</strong> to enhance test readability, modularity, and maintainability.
+                </p>
+            </div>
+
+            <div>
+                <h3 class="text-xl font-semibold text-primary mb-3">🔧 Technology Stack</h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 bg-primary-100 text-primary-800 rounded-full text-sm">Python</span>
+                    <span class="px-3 py-1 bg-secondary-100 text-secondary-800 rounded-full text-sm">Robot Framework</span>
+                    <span class="px-3 py-1 bg-accent-100 text-accent-800 rounded-full text-sm">SeleniumLibrary</span>
+                    <span class="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm">Web Automation</span>
+                    <span class="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm">GitHub</span>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="text-xl font-semibold text-primary mb-3">📌 Key Features</h3>
+                <ul class="list-disc list-inside text-text-secondary space-y-1">
+                    <li>Automated UI validation of Facebook Sign-Up form</li>
+                    <li>Test coverage for both valid and invalid mobile numbers</li>
+                    <li>Password field behavior verification and security constraints</li>
+                    <li>Reusable test libraries and modular structure</li>
+                    <li>Human-readable test cases for better collaboration</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-xl font-semibold text-primary mb-3">📂 GitHub Repository</h3>
+                <a href="https://github.com/johnrosalesss/fb-signup-test-automation" target="_blank" class="text-accent hover:underline">
+                    github.com/johnrosalesss/fb-signup-test-automation
+                </a>
+            </div>
+        </div>
+    `
+                },
+
+                'open-house-snake-game': {
+                    title: 'SPU Manila Snake Game',
+                    content: `
+    <div class="space-y-6">
+      <img src="../images/pygame.jpg" alt="pygame.jpg" class="w-full h-64 object-cover rounded-lg" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+
+      <div>
+        <h3 class="text-xl font-semibold text-primary mb-3">Overview</h3>
+        <p class="text-text-secondary">
+          Developed for St. Paul University Manila's Open House 2023, this interactive Snake Game was built using Python and Pygame to engage prospective students with a fun, SPU-themed programming demo.
+        </p>
+        <ul class="list-disc list-inside text-text-secondary mt-2 space-y-1">
+          <li>🎮 Classic Snake gameplay with SPU Manila twist</li>
+          <li>💻 Showcased Python programming capabilities</li>
+          <li>🎓 Designed to introduce CS concepts in an interactive way</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-xl font-semibold text-primary mb-3">Event Details</h3>
+        <p class="text-text-secondary">
+          📅 December 2, 2023<br>
+          🏛️ Venue: St. Paul University Manila (Founders Lobby)<br>
+          👨‍💻 Team Lead: John Paolo Rosales
+        </p>
+      </div>
+
+      <div>
+        <h3 class="text-xl font-semibold text-primary mb-3">Key Features</h3>
+        <ul class="list-disc list-inside text-text-secondary space-y-1">
+          <li>Arrow key controls (↑ ↓ ← →)</li>
+          <li>Score tracking</li>
+          <li>Fullscreen toggle (Press F)</li>
+          <li>SPU-themed game visuals</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-xl font-semibold text-primary mb-3">Technology Stack</h3>
+        <div class="flex flex-wrap gap-2">
+          <span class="px-3 py-1 bg-primary-100 text-primary-800 rounded-full text-sm">Python</span>
+          <span class="px-3 py-1 bg-secondary-100 text-secondary-800 rounded-full text-sm">Pygame</span>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="text-xl font-semibold text-primary mb-3">Repository</h3>
+        <p class="text-text-secondary">
+          View source code on <a href="https://github.com/johnrosalesss/college_fair_game" target="_blank" class="text-primary underline">GitHub</a>.
+        </p>
+      </div>
+    </div>
+  `
+                }
+
+            };
+
+            const project = projectData[projectId];
+            if (project) {
+                modalTitle.textContent = project.title;
+                modalContent.innerHTML = project.content;
+                modal.classList.remove('hidden');
+                document.body.style.overflow = 'hidden';
+            }
+        }
+
+        function closeProjectModal() {
+            const modal = document.getElementById('project-modal');
+            modal.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal when clicking outside
+        document.getElementById('project-modal').addEventListener('click', function (e) {
+            if (e.target === this) {
+                closeProjectModal();
+            }
+        });
+
+        // Load more functionality
+        document.getElementById('load-more-btn').addEventListener('click', function () {
+            // Simulate loading more projects
+            this.textContent = 'Loading...';
+            setTimeout(() => {
+                this.textContent = 'All Projects Loaded';
+                this.disabled = true;
+                this.classList.add('opacity-50', 'cursor-not-allowed');
+            }, 1000);
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-slide-up');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all sections for animations
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+
+</html>
