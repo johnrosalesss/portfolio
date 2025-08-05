@@ -1,14 +1,10 @@
-# HTML
-
-A modern HTML project utilizing Tailwind CSS for building responsive web applications with minimal setup.
-
 ## 🚀 Features
 
-- **HTML5** - Modern HTML structure with best practices
-- **Tailwind CSS** - Utility-first CSS framework for rapid UI development
-- **Custom Components** - Pre-built component classes for buttons and containers
-- **NPM Scripts** - Easy-to-use commands for development and building
-- **Responsive Design** - Mobile-first approach for all screen sizes
+- **HTML5**
+- **Tailwind CSS**
+- **Custom Components** 
+- **NPM Scripts** 
+- **Responsive Design** 
 
 ## 📋 Prerequisites
 
@@ -48,10 +44,6 @@ html_app/
 
 This project uses Tailwind CSS for styling. Custom utility classes include:
 
-
-## 🧩 Customization
-
-To customize the Tailwind configuration, edit the `tailwind.config.js` file:
 
 
 ## 📦 Build for Production
