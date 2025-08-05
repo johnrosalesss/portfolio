@@ -921,19 +921,6 @@
             });
         }
 
-        techFilter.addEventListener('change', filterProjects);
-        typeFilter.addEventListener('change', filterProjects);
-        impactFilter.addEventListener('change', filterProjects);
-        searchInput.addEventListener('input', filterProjects);
-
-        resetButton.addEventListener('click', function () {
-            techFilter.value = 'all';
-            typeFilter.value = 'all';
-            impactFilter.value = 'all';
-            searchInput.value = '';
-            filterProjects();
-        });
-
         // Project modal functionality
         function openProjectModal(projectId) {
             const modal = document.getElementById('project-modal');
@@ -1344,17 +1331,6 @@
             if (e.target === this) {
                 closeProjectModal();
             }
-        });
-
-        // Load more functionality
-        document.getElementById('load-more-btn').addEventListener('click', function () {
-            // Simulate loading more projects
-            this.textContent = 'Loading...';
-            setTimeout(() => {
-                this.textContent = 'All Projects Loaded';
-                this.disabled = true;
-                this.classList.add('opacity-50', 'cursor-not-allowed');
-            }, 1000);
         });
 
         // Smooth scrolling for anchor links
